@@ -259,7 +259,7 @@
             //                    | GUI |     | SPC   | ENT |     | ALT |
 
             bindings = <
-&none  &kp BACKSLASH  &kp PIPE  &kp AMPS  &kp SEMI  &kp DOLLAR  &none  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LESS_THAN  &kp GREATER_THAN  &none  &none  &kp ENTER  &kp TAB  &kp BACKSPACE  &kp DEL  &kp APOSTROPHE  &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp CARET  &none  &kp TILDE  &kp AT  &kp HASH  &kp EXCL  &none  &kp EQUAL  &kp ASTERISK  &kp SLASH  &kp PLUS  &kp MINUS  &none  &trans  &trans  &trans  &trans  &trans  &trans
+&none  &kp BACKSLASH  &kp PIPE  &kp AMPS  &kp SEMI  &kp DOLLAR  &none  &kp RA(F)  &kp RA(G)  &kp RA(LESS_THAN)  &kp RA(Z)  &none  &none  &kp ENTER  &kp TAB  &kp BACKSPACE  &kp DEL  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(N8)  &kp LS(N9)  &kp LA(B)  &kp RA(N)  &kp RA(NUMBER_3)  &none  &kp TILDE  &kp AT  &kp HASH  &kp EXCL  &none  &kp LS(N7)  &kp RA(SLASH)  &kp LS(NUMBER_6)  &kp LS(NUMBER_3)  &kp LS(MINUS)  &none  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -273,7 +273,7 @@
             //                    | GUI |     | SPC | ENT |     | ALT |
 
             bindings = <
-&none  &kp N0  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &none  &none  &trans  &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &kp PG_UP  &none  &none  &trans  &trans  &trans  &trans  &trans  &kp UNDER  &kp HOME  &kp END  &none  &kp PAGE_DOWN  &none  &trans  &trans  &trans  &trans  &trans  &trans
+&none  &kp NON_US_BSLH  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &none  &none  &kp GRAVE  &kp EQUAL  &kp SEMICOLON  &kp COMMA  &kp RIGHT_BRACKET  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &kp PG_UP  &none  &none  &kp N0  &kp LEFT_BRACKET  &kp MINUS  &kp BACKSLASH  &trans  &kp UNDER  &kp HOME  &kp END  &none  &kp PAGE_DOWN  &none  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
