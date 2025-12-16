@@ -103,6 +103,82 @@
             hold-trigger-on-release;
             hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
         };
+
+        j_handler: j_handler {
+            compatible = "zmk,behavior-tap-dance";
+            label = "J_HANDLER";
+            #binding-cells = <0>;
+            bindings = <&tap_hold_mod LSHFT J>, <&ff_tap_hold J 0>;
+        };
+
+        jj_tap_hold: jj_tap_hold {
+            compatible = "zmk,behavior-hold-tap";
+            label = "JJ_TAP_HOLD";
+            bindings = <&kp>, <&jj>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            hold-while-undecided;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
+        };
+
+        k_handler: k_handler {
+            compatible = "zmk,behavior-tap-dance";
+            label = "K_HANDLER";
+            #binding-cells = <0>;
+            bindings = <&tap_hold_mod LSHFT K>, <&ff_tap_hold K 0>;
+        };
+
+        kk_tap_hold: kk_tap_hold {
+            compatible = "zmk,behavior-hold-tap";
+            label = "KK_TAP_HOLD";
+            bindings = <&kp>, <&kk>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            hold-while-undecided;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
+        };
+
+        l_handler: l_handler {
+            compatible = "zmk,behavior-tap-dance";
+            label = "L_HANDLER";
+            #binding-cells = <0>;
+            bindings = <&tap_hold_mod LSHFT L>, <&ff_tap_hold L 0>;
+        };
+
+        ll_tap_hold: ll_tap_hold {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LL_TAP_HOLD";
+            bindings = <&kp>, <&ll>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            hold-while-undecided;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
+        };
+
+        bksp_handler: bksp_handler {
+            compatible = "zmk,behavior-tap-dance";
+            label = "BKSP_HANDLER";
+            #binding-cells = <0>;
+            bindings = <&tap_hold_mod LSHFT J>, <&ff_tap_hold J 0>;
+        };
+
+        bksp_tap_hold: bksp_tap_hold {
+            compatible = "zmk,behavior-hold-tap";
+            label = "BKSP_TAP_HOLD";
+            bindings = <&kp>, <&jj>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            hold-while-undecided;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
+        };
     };
 
     macros {
@@ -132,6 +208,27 @@
             #binding-cells = <0>;
             bindings = <&kp F &kp F>;
             label = "FF";
+        };
+
+        jj: jj {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp J &kp J>;
+            label = "JJ";
+        };
+
+        kk: kk {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp K &kp K>;
+            label = "KK";
+        };
+
+        ll: ll {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp L &kp L>;
+            label = "LL";
         };
     };
 
