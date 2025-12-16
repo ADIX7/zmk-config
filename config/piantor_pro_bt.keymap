@@ -273,7 +273,7 @@
             //                    | GUI |     | SPC | ENT |     | ALT |
 
             bindings = <
-&none  &kp NON_US_BSLH  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &none  &none  &kp GRAVE  &kp EQUAL  &kp SEMICOLON  &kp COMMA  &kp RIGHT_BRACKET  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &kp PG_UP  &none  &none  &kp N0  &kp LEFT_BRACKET  &kp MINUS  &kp BACKSLASH  &trans  &kp UNDER  &kp HOME  &kp END  &none  &kp PAGE_DOWN  &none  &trans  &trans  &trans  &trans  &trans  &trans
+&none  &kp GRAVE  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &none  &none  &kp NON_US_BSLH  &kp EQUAL  &kp SEMICOLON  &kp APOSTROPHE  &kp RIGHT_BRACKET  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &kp PG_UP  &none  &none  &kp N0  &kp LEFT_BRACKET  &kp MINUS  &kp BACKSLASH  &trans  &kp UNDER  &kp HOME  &kp END  &none  &kp PAGE_DOWN  &none  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
