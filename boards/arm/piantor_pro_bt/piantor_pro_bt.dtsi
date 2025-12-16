@@ -9,6 +9,7 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 
 #include "piantor_pro_bt-layouts.dtsi"
+#include <dt-bindings/zmk/pointing.h>
 
 &default_layout {
     transform = <&default_transform>;
