@@ -56,6 +56,38 @@
             #binding-cells = <2>;
             tapping-term-ms = <150>;
         };
+
+        d_handler: d_handler {
+            compatible = "zmk,behavior-tap-dance";
+            label = "D_HANDLER";
+            #binding-cells = <0>;
+            bindings = <&tap_hold LEFT_ALT D>, <&dd_tap_hold D 0>;
+        };
+
+        dd_tap_hold: dd_tap_hold {
+            compatible = "zmk,behavior-hold-tap";
+            label = "DD_TAP_HOLD";
+            bindings = <&kp>, <&dd>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+        };
+
+        f_handler: f_handler {
+            compatible = "zmk,behavior-tap-dance";
+            label = "F_HANDLER";
+            #binding-cells = <0>;
+            bindings = <&tap_hold LEFT_ALT F>, <&ff_tap_hold F 0>;
+        };
+
+        ff_tap_hold: ff_tap_hold {
+            compatible = "zmk,behavior-hold-tap";
+            label = "FF_TAP_HOLD";
+            bindings = <&kp>, <&ff>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+        };
     };
 
     macros {
@@ -71,6 +103,20 @@
             #binding-cells = <0>;
             bindings = <&kp S &kp S>;
             label = "SS";
+        };
+
+        dd: dd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp D &kp D>;
+            label = "DD";
+        };
+
+        ff: ff {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp F &kp F>;
+            label = "FF";
         };
     };
 
