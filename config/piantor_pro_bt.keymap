@@ -108,7 +108,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "J_HANDLER";
             #binding-cells = <0>;
-            bindings = <&tap_hold_mod LEFT_SHIFT J>, <&jj_tap_hold J 0>;
+            bindings = <&tap_hold_mod LEFT_SHIFT J>, <&kp J>;
         };
 
         jj_tap_hold: jj_tap_hold {
