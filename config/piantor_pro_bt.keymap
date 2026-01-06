@@ -108,7 +108,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "J_HANDLER";
             #binding-cells = <0>;
-            bindings = <&tap_hold_mod LEFT_SHIFT J>, <&kp J>;
+            bindings = <&tap_hold_mod LEFT_SHIFT J>, <&jj_tap_hold J 0>;
         };
 
         jj_tap_hold: jj_tap_hold {
@@ -198,21 +198,21 @@
         aa: aa {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp A &kp A>;
+            bindings = <&kp A>;
             label = "AA";
         };
 
         ss: ss {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp S &kp S>;
+            bindings = <&kp S>;
             label = "SS";
         };
 
         dd: dd {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp D &kp D>;
+            bindings = <&kp D>;
             label = "DD";
         };
 
@@ -226,21 +226,21 @@
         jj: jj {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp J &kp J>;
+            bindings = <&kp J>;
             label = "JJ";
         };
 
         kk: kk {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp K &kp K>;
+            bindings = <&kp K>;
             label = "KK";
         };
 
         ll: ll {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp L &kp L>;
+            bindings = <&kp L>;
             label = "LL";
         };
     };
