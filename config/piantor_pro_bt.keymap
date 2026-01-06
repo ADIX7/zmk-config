@@ -219,7 +219,7 @@
         ff: ff {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp F &kp F>;
+            bindings = <&kp F>;
             label = "FF";
         };
 
