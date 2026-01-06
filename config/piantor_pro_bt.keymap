@@ -108,7 +108,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "J_HANDLER";
             #binding-cells = <0>;
-            bindings = <&tap_hold_mod RSHFT J>, <&jj_tap_hold J 0>;
+            bindings = <&tap_hold_mod LEFT_SHIFT J>, <&jj_tap_hold J 0>;
         };
 
         jj_tap_hold: jj_tap_hold {
@@ -127,7 +127,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "K_HANDLER";
             #binding-cells = <0>;
-            bindings = <&tap_hold_mod RCTRL K>, <&kk_tap_hold K 0>;
+            bindings = <&tap_hold_mod LCTRL K>, <&kk_tap_hold K 0>;
         };
 
         kk_tap_hold: kk_tap_hold {
@@ -165,7 +165,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "BKSP_HANDLER";
             #binding-cells = <0>;
-            bindings = <&tap_hold_mod RMETA BACKSPACE>, <&kp BACKSPACE>;
+            bindings = <&tap_hold_mod LEFT_META BACKSPACE>, <&kp BACKSPACE>;
         };
 
         bksp_tap_hold: bksp_tap_hold {
