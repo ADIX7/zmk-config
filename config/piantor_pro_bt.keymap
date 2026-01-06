@@ -24,7 +24,6 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "balanced";
-            hold-while-undecided;
             hold-trigger-on-release;
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;
         };
@@ -33,7 +32,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "A_HANDLER";
             #binding-cells = <0>;
-            bindings = <&tap_hold_mod_left LEFT_WIN A>, <&aa_tap_hold A 0>;
+            bindings = <&tap_hold_mod_right LEFT_WIN A>, <&aa_tap_hold A 0>;
         };
 
         aa_tap_hold: aa_tap_hold {
@@ -52,7 +51,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "S_HANDLER";
             #binding-cells = <0>;
-            bindings = <&tap_hold_mod_left LEFT_ALT S>, <&ss_tap_hold S 0>;
+            bindings = <&tap_hold_mod_right LEFT_ALT S>, <&ss_tap_hold S 0>;
         };
 
         ss_tap_hold: ss_tap_hold {
@@ -71,7 +70,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "D_HANDLER";
             #binding-cells = <0>;
-            bindings = <&tap_hold_mod_left LCTRL D>, <&dd_tap_hold D 0>;
+            bindings = <&tap_hold_mod_right LCTRL D>, <&dd_tap_hold D 0>;
         };
 
         dd_tap_hold: dd_tap_hold {
@@ -90,7 +89,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "F_HANDLER";
             #binding-cells = <0>;
-            bindings = <&tap_hold_mod_left LSHFT F>, <&ff_tap_hold F 0>;
+            bindings = <&tap_hold_mod_right LSHFT F>, <&ff_tap_hold F 0>;
         };
 
         ff_tap_hold: ff_tap_hold {
@@ -189,7 +188,6 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "balanced";
-            hold-while-undecided;
             hold-trigger-on-release;
             hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
         };
