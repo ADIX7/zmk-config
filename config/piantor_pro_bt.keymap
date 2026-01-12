@@ -272,14 +272,7 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&kp CAPSLOCK  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp PRINTSCREEN  &kp ESCAPE  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp BACKSPACE  &kp DEL  &kp TAB  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &ctrl_meta  &shift_nav  &layer_key_tap_hold 3 SPACE  &mo 7  &mo 5  &layer_key_tap_hold 2 ENTER  &mo 4
-            >;
-        };
-
-        homerow {
-            display-name = "HOMEROW";
-            bindings = <
-&kp CAPSLOCK  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp PRINTSCREEN  &kp ESCAPE  &a_handler  &s_handler  &d_handler  &f_handler  &kp G  &kp H  &j_handler  &k_handler  &l_handler  &bksp_handler  &kp DEL  &kp TAB  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &none  &mo 6  &layer_key_tap_hold 3 SPACE  &mo 7  &mo 5  &layer_key_tap_hold 2 ENTER  &mo 4
+&kp CAPSLOCK  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp PRINTSCREEN  &kp ESCAPE  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp BACKSPACE  &kp DEL  &kp TAB  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &ctrl_meta  &shift_nav  &layer_key_tap_hold 2 SPACE  &mo 7  &mo 5  &layer_key_tap_hold 1 ENTER  &mo 5
             >;
         };
 
@@ -293,7 +286,7 @@
             //                    | GUI |     | SPC | ENT |     | ALT |
 
             bindings = <
-&none  &kp GRAVE  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &none  &none  &kp NON_US_BSLH  &kp EQUAL  &kp SEMICOLON  &kp APOSTROPHE  &kp RIGHT_BRACKET  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &kp PG_UP  &none  &none  &kp N0  &kp LEFT_BRACKET  &kp MINUS  &kp BACKSLASH  &none  &none  &kp HOME  &kp END  &none  &kp PAGE_DOWN  &none  &trans  &to 1  &trans  &trans  &trans  &trans
+&none  &kp GRAVE  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &none  &none  &kp NON_US_BSLH  &kp EQUAL  &kp SEMICOLON  &kp APOSTROPHE  &kp RIGHT_BRACKET  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &kp PG_UP  &none  &none  &kp N0  &kp LEFT_BRACKET  &kp MINUS  &kp BACKSLASH  &none  &none  &kp HOME  &kp END  &none  &kp PAGE_DOWN  &none  &trans  &mo 4  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -307,7 +300,14 @@
             //                    | GUI |     | SPC   | ENT |     | ALT |
 
             bindings = <
-&none  &kp RA(Q)  &kp RA(W)  &kp RA(C)  &kp RA(COMMA)  &kp RA(SEMI)  &none  &kp RA(F)  &kp RA(G)  &kp RA(NON_US_BACKSLASH)  &kp RA(Z)  &none  &none  &kp ENTER  &kp TAB  &kp BACKSPACE  &kp DEL  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(N8)  &kp LS(N9)  &kp RA(B)  &kp RA(N)  &kp RA(NUMBER_3)  &none  &kp RA(NUMBER_1)  &kp RA(V)  &kp RA(X)  &kp LS(NUMBER_4)  &kp RA(N7)  &kp LS(N7)  &kp RA(SLASH)  &kp LS(NUMBER_6)  &kp LS(NUMBER_3)  &kp LS(N5)  &none  &trans  &trans  &trans  &trans  &to 1  &trans
+&none  &kp RA(Q)  &kp RA(W)  &kp RA(C)  &kp RA(COMMA)  &kp RA(SEMI)  &none  &kp RA(F)  &kp RA(G)  &kp RA(NON_US_BACKSLASH)  &kp RA(Z)  &none  &none  &kp ENTER  &kp TAB  &kp BACKSPACE  &kp DEL  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(N8)  &kp LS(N9)  &kp RA(B)  &kp RA(N)  &kp RA(NUMBER_3)  &none  &kp RA(NUMBER_1)  &kp RA(V)  &kp RA(X)  &kp LS(NUMBER_4)  &kp RA(N7)  &kp LS(N7)  &kp RA(SLASH)  &kp LS(NUMBER_6)  &kp LS(NUMBER_3)  &kp LS(N5)  &none  &trans  &trans  &trans  &trans  &mo 4  &trans
+            >;
+        };
+
+        homerow {
+            display-name = "HOMEROW";
+            bindings = <
+&kp CAPSLOCK  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp PRINTSCREEN  &kp ESCAPE  &a_handler  &s_handler  &d_handler  &f_handler  &kp G  &kp H  &j_handler  &k_handler  &l_handler  &bksp_handler  &kp DEL  &kp TAB  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &none  &mo 6  &layer_key_tap_hold 2 SPACE  &mo 7  &mo 5  &layer_key_tap_hold 1 ENTER  &mo 5
             >;
         };
 
