@@ -197,7 +197,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "CTRL_META";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL>, <&kp LEFT_META>;
+            bindings = <&sticky_slow LCTRL>, <&sticky_slow LEFT_META>;
         };
 
         shift_nav: shift_nav {
@@ -205,6 +205,14 @@
             label = "SHIFT_NAV";
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&mo 6>;
+        };
+
+        sticky_slow: sticky_slow {
+            compatible = "zmk,behavior-sticky-key";
+            label = "STICKY_SLOW";
+            bindings = <&kp>;
+            #binding-cells = <1>;
+            release-after-ms = <2000>;
         };
     };
 
