@@ -200,11 +200,11 @@
             bindings = <&sticky_slow LCTRL>, <&sticky_slow LEFT_META>;
         };
 
-        shift_nav: shift_nav {
+        shift_tools: shift_tools {
             compatible = "zmk,behavior-tap-dance";
-            label = "SHIFT_NAV";
+            label = "SHIFT_TOOLS";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&mo 6>;
+            bindings = <&kp LEFT_SHIFT>, <&mo 7>;
         };
 
         sticky_slow: sticky_slow {
@@ -280,7 +280,7 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&kp CAPSLOCK  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp PRINTSCREEN  &kp ESCAPE  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp BACKSPACE  &kp DEL  &kp TAB  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &ctrl_meta  &shift_nav  &layer_key_tap_hold 2 SPACE  &mo 7  &mo 5  &layer_key_tap_hold 1 ENTER  &mo 4
+&kp CAPSLOCK  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp PRINTSCREEN  &kp ESCAPE  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp BACKSPACE  &kp DEL  &kp TAB  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &ctrl_meta  &mo 6  &layer_key_tap_hold 2 SPACE  &shift_tools  &mo 5  &layer_key_tap_hold 1 ENTER  &mo 4
             >;
         };
 
