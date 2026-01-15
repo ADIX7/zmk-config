@@ -352,8 +352,16 @@
         tools {
             display-name = "TOOLS";
             bindings = <
-&none  &none  &none  &bl BL_DEC  &bl BL_INC  &none  &none  &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &none  &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none  &kp C_PP  &kp C_PREVIOUS  &kp K_NEXT  &none  &none  &none  &none  &none  &none  &out OUT_TOG  &none  &none  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_COLOR_HSB(0,0,100)  &trans  &trans  &trans  &trans  &trans  &trans
+&tog 8  &none  &none  &bl BL_DEC  &bl BL_INC  &none  &none  &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &none  &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none  &kp C_PP  &kp C_PREVIOUS  &kp K_NEXT  &none  &none  &none  &none  &none  &none  &out OUT_TOG  &none  &none  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_COLOR_HSB(0,0,100)  &trans  &trans  &trans  &trans  &trans  &trans
             >;
+        };
+
+        game {
+            bindings = <
+&none  &kp N1  &kp Q  &kp W  &kp E  &kp N4  &none  &none  &none  &none  &none  &none  &none  &kp N2  &kp A  &kp S  &kp D  &kp N5  &none  &none  &none  &none  &none  &none  &none  &kp N3  &kp X  &kp C  &kp V  &kp N6  &none  &none  &none  &none  &none  &none  &none  &kp SPACE  &kp ENTER  &none  &to 0  &none
+            >;
+
+            label = "GAME";
         };
     };
 };
