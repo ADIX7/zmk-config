@@ -214,6 +214,13 @@
             #binding-cells = <1>;
             release-after-ms = <2000>;
         };
+
+        number_layer_tapdance: number_layer_tapdance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "NUMBER_LAYER_TAPDANCE";
+            #binding-cells = <0>;
+            bindings = <&mo 4>, <&tog 4>;
+        };
     };
 
     macros {
@@ -280,7 +287,7 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&kp CAPSLOCK  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp PRINTSCREEN  &kp TAB  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp BACKSPACE  &kp DEL  &kp ESCAPE  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &ctrl_meta  &mo 6  &layer_key_tap_hold 2 SPACE  &shift_tools  &mo 5  &layer_key_tap_hold 1 ENTER  &mo 4
+&kp CAPSLOCK  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp PRINTSCREEN  &kp TAB  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp BACKSPACE  &kp DEL  &kp ESCAPE  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &ctrl_meta  &mo 6  &layer_key_tap_hold 2 SPACE  &shift_tools  &mo 5  &layer_key_tap_hold 1 ENTER  &number_layer_tapdance
             >;
         };
 
@@ -321,7 +328,7 @@
 
         number {
             bindings = <
-&none  &kp COMMA  &kp N7  &kp N8  &kp N9  &kp C_VOLUME_UP  &none  &none  &none  &none  &none  &none  &none  &kp GRAVE  &kp N4  &kp N5  &kp N6  &kp C_VOLUME_DOWN  &none  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &none  &none  &kp DOT  &kp N1  &kp N2  &kp N3  &kp C_MUTE  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &kp COMMA  &kp N7  &kp N8  &kp N9  &kp C_VOLUME_UP  &none  &none  &none  &none  &none  &none  &none  &kp GRAVE  &kp N4  &kp N5  &kp N6  &kp C_VOLUME_DOWN  &none  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &none  &none  &kp DOT  &kp N1  &kp N2  &kp N3  &kp C_MUTE  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &tog 4
             >;
 
             label = "NUM";
