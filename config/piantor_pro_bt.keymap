@@ -315,7 +315,7 @@
             //                    | GUI |     | SPC   | ENT |     | ALT |
 
             bindings = <
-&none  &kp RA(Q)  &kp RA(W)  &kp RA(C)  &kp RA(COMMA)  &kp RA(SEMI)  &none  &kp RA(F)  &kp RA(G)  &kp RA(NON_US_BACKSLASH)  &kp RA(Z)  &none  &none  &none  &none  &none  &none  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(N8)  &kp LS(N9)  &kp RA(B)  &kp RA(N)  &kp RA(NUMBER_3)  &none  &kp RA(NUMBER_1)  &kp RA(V)  &kp RA(X)  &kp LS(NUMBER_4)  &kp RA(N7)  &kp LS(N7)  &kp RA(SLASH)  &kp LS(NUMBER_6)  &kp LS(NUMBER_3)  &kp LS(N5)  &none  &trans  &trans  &trans  &trans  &mo 4  &trans
+&none  &kp RA(Q)  &kp RA(W)  &kp RA(C)  &kp RA(N7)  &none  &none  &kp RA(F)  &kp RA(G)  &kp RA(NON_US_BACKSLASH)  &kp RA(Z)  &none  &none  &none  &none  &kp RA(COMMA)  &kp LS(NUMBER_4)  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(N8)  &kp LS(N9)  &kp RA(B)  &kp RA(N)  &kp RA(NUMBER_3)  &none  &kp RA(NUMBER_1)  &kp RA(SEMI)  &kp RA(X)  &kp RA(V)  &none  &kp LS(N7)  &kp RA(SLASH)  &kp LS(NUMBER_6)  &kp LS(NUMBER_3)  &kp LS(N5)  &none  &trans  &trans  &trans  &trans  &mo 4  &trans
             >;
         };
 
