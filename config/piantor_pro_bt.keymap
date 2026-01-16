@@ -336,7 +336,7 @@
 
         number {
             bindings = <
-&none  &kp COMMA  &kp N7  &kp N8  &kp N9  &kp DEL  &none  &none  &none  &none  &none  &none  &none  &kp GRAVE  &kp N4  &kp N5  &kp N6  &kp BACKSPACE  &none  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &none  &none  &kp DOT  &kp N1  &kp N2  &kp N3  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &tog 5
+&none  &kp COMMA  &kp N7  &kp N8  &kp N9  &kp DEL  &none  &none  &none  &none  &none  &none  &none  &kp GRAVE  &kp N4  &kp N5  &kp N6  &kp BACKSPACE  &none  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &none  &none  &kp DOT  &kp N1  &kp N2  &kp N3  &none  &kp LS(N7)  &kp RA(SLASH)  &kp LS(NUMBER_6)  &kp LS(NUMBER_3)  &kp SLASH  &none  &none  &none  &none  &none  &kp ENTER  &tog 5
             >;
 
             label = "NUM";
