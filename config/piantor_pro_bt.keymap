@@ -204,7 +204,9 @@
             compatible = "zmk,behavior-tap-dance";
             label = "SHIFT_TOOLS";
             #binding-cells = <0>;
-            bindings = <&taphold_stickykp_kp_hold LEFT_SHIFT LALT>, <&mo 8>;
+            bindings =
+                <&taphold_stickykp_kp_hold_undec LEFT_SHIFT LALT>,
+                <&mo 8>;
         };
 
         sticky_slow: sticky_slow {
@@ -261,13 +263,14 @@
             tapping-term-ms = <230>;
         };
 
-        taphold_stickykp_kp_hold: taphold_stickykp_kp_hold {
+        taphold_stickykp_kp_hold_undec: taphold_stickykp_kp_hold_undec {
             compatible = "zmk,behavior-hold-tap";
-            label = "TAPHOLD_STICKYKP_KP_HOLD";
+            label = "TAPHOLD_STICKYKP_KP_HOLD_UNDEC";
             bindings = <&kp>, <&sticky_slow>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
+            hold-while-undecided;
         };
     };
 
