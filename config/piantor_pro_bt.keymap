@@ -206,7 +206,7 @@
             #binding-cells = <0>;
             bindings =
                 <&taphold_stickykp_kp_hold_undec LEFT_SHIFT LALT>,
-                <&mo 8>;
+                <&mo 9>;
         };
 
         sticky_slow: sticky_slow {
@@ -221,7 +221,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "NUMBER_LAYER_TAPDANCE";
             #binding-cells = <0>;
-            bindings = <&mo 5>, <&tog 5>;
+            bindings = <&mo 6>, <&tog 6>;
         };
 
         tap_hold_layer_sticky_mod: tap_hold_layer_sticky_mod {
@@ -240,7 +240,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "NAV_LAYER_WITH_CTRL";
             #binding-cells = <0>;
-            bindings = <&tap_hold_layer_sticky_mod 7 LCTRL>, <&to 7>;
+            bindings = <&tap_hold_layer_sticky_mod 8 LCTRL>, <&to 8>;
         };
 
         tap_hold_sl_slow__keypress: tap_hold_sl_slow__keypress {
@@ -279,24 +279,6 @@
             bindings = <&mo>;
             #binding-cells = <1>;
             release-after-ms = <1000>;
-        };
-
-        game_mod_qr: game_mod_qr {
-            compatible = "zmk,behavior-mod-morph";
-            label = "GAME_MOD_QR";
-            bindings = <&kp Q>, <&kp R>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
-        game_mod_ef: game_mod_ef {
-            compatible = "zmk,behavior-mod-morph";
-            label = "GAME_MOD_EF";
-            bindings = <&kp E>, <&kp F>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
         };
     };
 
@@ -364,7 +346,7 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&kp CAPSLOCK  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp PRINTSCREEN  &kp TAB  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp DEL  &kp BACKSPACE  &taphold_kp_kp_hold LCTRL ESCAPE  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &ctrl_meta  &nav_layer_with_ctrl  &layer_key_tap_hold 2 SPACE  &shift_tools  &tap_hold_sl_slow__keypress LEFT_SHIFT 6  &layer_key_tap_hold 1 ENTER  &number_layer_tapdance
+&kp CAPSLOCK  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp PRINTSCREEN  &kp TAB  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp DEL  &kp BACKSPACE  &taphold_kp_kp_hold LCTRL ESCAPE  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &ctrl_meta  &nav_layer_with_ctrl  &layer_key_tap_hold 2 SPACE  &shift_tools  &tap_hold_sl_slow__keypress LEFT_SHIFT 7  &layer_key_tap_hold 1 ENTER  &number_layer_tapdance
             >;
         };
 
@@ -398,22 +380,28 @@
 
         game {
             bindings = <
-&none  &kp N1  &game_mod_qr  &kp W  &game_mod_ef  &kp N4  &kp N7  &kp N0  &none  &none  &none  &none  &kp TAB  &kp N2  &kp A  &kp S  &kp D  &kp N5  &kp N8  &none  &none  &none  &none  &none  &kp ESC  &kp N3  &kp X  &kp C  &kp V  &kp N6  &kp N9  &none  &none  &none  &none  &none  &kp LEFT_SHIFT  &kp SPACE  &kp ENTER  &none  &mo 4  &to 0
+&none  &kp N1  &kp Q  &kp W  &kp E  &kp N4  &kp N7  &kp N0  &none  &none  &none  &none  &kp TAB  &kp N2  &kp A  &kp S  &kp D  &kp N5  &kp N8  &none  &none  &none  &none  &none  &kp ESC  &kp N3  &kp X  &kp C  &kp V  &kp N6  &kp N9  &none  &none  &none  &none  &none  &mo 4  &kp SPACE  &kp ENTER  &none  &mo 5  &to 0
             >;
 
             label = "GAME";
         };
 
+        game2 {
+            bindings = <
+&trans  &trans  &kp R  &trans  &kp F  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
         homerow {
             display-name = "HOMEROW";
             bindings = <
-&kp CAPSLOCK  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp PRINTSCREEN  &kp TAB  &a_handler  &s_handler  &d_handler  &f_handler  &kp G  &kp H  &j_handler  &k_handler  &l_handler  &bksp_handler  &kp BACKSPACE  &kp ESC  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &tog 4  &trans  &trans  &trans  &trans  &trans  &trans
+&kp CAPSLOCK  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp PRINTSCREEN  &kp TAB  &a_handler  &s_handler  &d_handler  &f_handler  &kp G  &kp H  &j_handler  &k_handler  &l_handler  &bksp_handler  &kp BACKSPACE  &kp ESC  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &tog 5  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         number {
             bindings = <
-&none  &kp COMMA  &kp N7  &kp N8  &kp N9  &kp DEL  &none  &none  &none  &none  &none  &none  &none  &kp GRAVE  &kp N4  &kp N5  &kp N6  &kp BACKSPACE  &none  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &kp BACKSPACE  &none  &kp DOT  &kp N1  &kp N2  &kp N3  &none  &kp LS(N7)  &kp RA(SLASH)  &kp LS(NUMBER_6)  &kp LS(NUMBER_3)  &kp SLASH  &none  &trans  &trans  &trans  &none  &kp ENTER  &tog 5
+&none  &kp COMMA  &kp N7  &kp N8  &kp N9  &kp DEL  &none  &none  &none  &none  &none  &none  &none  &kp GRAVE  &kp N4  &kp N5  &kp N6  &kp BACKSPACE  &none  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &kp BACKSPACE  &none  &kp DOT  &kp N1  &kp N2  &kp N3  &none  &kp LS(N7)  &kp RA(SLASH)  &kp LS(NUMBER_6)  &kp LS(NUMBER_3)  &kp SLASH  &none  &trans  &trans  &trans  &none  &kp ENTER  &tog 6
             >;
 
             label = "NUM";
@@ -428,7 +416,7 @@
 
         nav {
             bindings = <
-&none  &none  &none  &none  &none  &none  &none  &kp C_PP  &kp C_PREVIOUS  &kp C_NEXT  &none  &none  &none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp PG_UP  &none  &none  &none  &none  &none  &none  &none  &none  &kp HOME  &kp END  &none  &kp PG_DN  &none  &tog 7  &none  &none  &trans  &trans  &trans
+&none  &none  &none  &none  &none  &none  &none  &kp C_PP  &kp C_PREVIOUS  &kp C_NEXT  &none  &none  &none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp PG_UP  &none  &none  &none  &none  &none  &none  &none  &none  &kp HOME  &kp END  &none  &kp PG_DN  &none  &tog 8  &none  &none  &trans  &trans  &trans
             >;
 
             label = "NAV";
@@ -443,7 +431,7 @@
 
         mouse {
             bindings = <
-&none  &none  &mkp LCLK  &mmv MOVE_UP  &mkp RCLK  &msc SCRL_UP  &none  &none  &none  &none  &none  &none  &msc SCRL_LEFT  &msc SCRL_RIGHT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN  &none  &kp LSHIFT  &kp LCTRL  &kp LALT  &kp LGUI  &none  &kp ESC  &mkp LCLK  &mkp MB4  &mkp MCLK  &mkp MB5  &to 9  &none  &none  &none  &none  &none  &none  &trans  &trans  &trans  &trans  &trans  &trans
+&none  &none  &mkp LCLK  &mmv MOVE_UP  &mkp RCLK  &msc SCRL_UP  &none  &none  &none  &none  &none  &none  &msc SCRL_LEFT  &msc SCRL_RIGHT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN  &none  &kp LSHIFT  &kp LCTRL  &kp LALT  &kp LGUI  &none  &kp ESC  &mkp LCLK  &mkp MB4  &mkp MCLK  &mkp MB5  &to 10  &none  &none  &none  &none  &none  &none  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "MOUSE";
@@ -455,12 +443,12 @@
 
         homerow {
             if-layers = <1 2>;
-            then-layer = <4>;
+            then-layer = <5>;
         };
 
         mouse {
-            if-layers = <7 5>;
-            then-layer = <9>;
+            if-layers = <8 6>;
+            then-layer = <10>;
         };
     };
 };
