@@ -243,10 +243,10 @@
             bindings = <&tap_hold_layer_sticky_mod 7 LCTRL>, <&to 7>;
         };
 
-        tap_hold_sticky_layer_keypress: tap_hold_sticky_layer_keypress {
+        tap_hold_sl_slow__keypress: tap_hold_sl_slow__keypress {
             compatible = "zmk,behavior-hold-tap";
-            label = "TAP_HOLD_STICKY_LAYER_KEYPRESS";
-            bindings = <&kp>, <&sl>;
+            label = "TAP_HOLD_SL_SLOW__KEYPRESS";
+            bindings = <&kp>, <&sticky_layer_slow_release>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -271,6 +271,14 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             hold-while-undecided;
+        };
+
+        sticky_layer_slow_release: sticky_layer_slow_release {
+            compatible = "zmk,behavior-sticky-key";
+            label = "STICKY_LAYER_SLOW_RELEASE";
+            bindings = <&mo>;
+            #binding-cells = <1>;
+            release-after-ms = <1000>;
         };
     };
 
@@ -338,7 +346,7 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&kp CAPSLOCK  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp PRINTSCREEN  &kp TAB  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp BACKSPACE  &kp DEL  &taphold_kp_kp_hold LCTRL ESCAPE  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &ctrl_meta  &nav_layer_with_ctrl  &layer_key_tap_hold 2 SPACE  &shift_tools  &tap_hold_sticky_layer_keypress LEFT_SHIFT 6  &layer_key_tap_hold 1 ENTER  &number_layer_tapdance
+&kp CAPSLOCK  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp PRINTSCREEN  &kp TAB  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp BACKSPACE  &kp DEL  &taphold_kp_kp_hold LCTRL ESCAPE  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &ctrl_meta  &nav_layer_with_ctrl  &layer_key_tap_hold 2 SPACE  &shift_tools  &tap_hold_sl_slow__keypress LEFT_SHIFT 6  &layer_key_tap_hold 1 ENTER  &number_layer_tapdance
             >;
         };
 
