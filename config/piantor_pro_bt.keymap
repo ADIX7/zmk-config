@@ -240,6 +240,16 @@
             #binding-cells = <0>;
             bindings = <&tap_hold_layer_sticky_mod 7 LALT>, <&to 7>;
         };
+
+        tap_hold_sticky_layer_keypress: tap_hold_sticky_layer_keypress {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TAP_HOLD_STICKY_LAYER_KEYPRESS";
+            bindings = <&kp>, <&sl>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+        };
     };
 
     macros {
@@ -306,7 +316,7 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&kp CAPSLOCK  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp PRINTSCREEN  &kp TAB  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp BACKSPACE  &kp DEL  &kp ESCAPE  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &ctrl_meta  &nav_layer_with_alt  &layer_key_tap_hold 2 SPACE  &shift_tools  &mo 6  &layer_key_tap_hold 1 ENTER  &number_layer_tapdance
+&kp CAPSLOCK  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp PRINTSCREEN  &kp TAB  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp BACKSPACE  &kp DEL  &kp ESCAPE  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &ctrl_meta  &nav_layer_with_alt  &layer_key_tap_hold 2 SPACE  &shift_tools  &tap_hold_sticky_layer_keypress LEFT_SHIFT 6  &layer_key_tap_hold 1 ENTER  &number_layer_tapdance
             >;
         };
 
