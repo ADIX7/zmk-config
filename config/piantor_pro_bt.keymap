@@ -251,13 +251,13 @@
             flavor = "balanced";
         };
 
-        taphold_kp_kp: taphold_kp_kp {
+        taphold_kp_kp_hold: taphold_kp_kp_hold {
             compatible = "zmk,behavior-hold-tap";
-            label = "TAPHOLD_KP_KP";
+            label = "TAPHOLD_KP_KP_HOLD";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "hold-preferred";
             tapping-term-ms = <230>;
         };
     };
@@ -326,7 +326,7 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&kp CAPSLOCK  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp PRINTSCREEN  &kp TAB  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp BACKSPACE  &kp DEL  &taphold_kp_kp LCTRL ESCAPE  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &ctrl_meta  &nav_layer_with_alt  &layer_key_tap_hold 2 SPACE  &shift_tools  &tap_hold_sticky_layer_keypress LEFT_SHIFT 6  &layer_key_tap_hold 1 ENTER  &number_layer_tapdance
+&kp CAPSLOCK  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp PRINTSCREEN  &kp TAB  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp BACKSPACE  &kp DEL  &taphold_kp_kp_hold LCTRL ESCAPE  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &ctrl_meta  &nav_layer_with_alt  &layer_key_tap_hold 2 SPACE  &shift_tools  &tap_hold_sticky_layer_keypress LEFT_SHIFT 6  &layer_key_tap_hold 1 ENTER  &number_layer_tapdance
             >;
         };
 
