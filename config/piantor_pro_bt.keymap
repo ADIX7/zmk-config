@@ -204,7 +204,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "SHIFT_TOOLS";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&mo 8>;
+            bindings = <&taphold_stickykp_kp_hold LEFT_SHIFT LALT>, <&mo 8>;
         };
 
         sticky_slow: sticky_slow {
@@ -234,11 +234,11 @@
             tapping-term-ms = <200>;
         };
 
-        nav_layer_with_alt: nav_layer_with_alt {
+        nav_layer_with_ctrl: nav_layer_with_ctrl {
             compatible = "zmk,behavior-tap-dance";
-            label = "NAV_LAYER_WITH_ALT";
+            label = "NAV_LAYER_WITH_CTRL";
             #binding-cells = <0>;
-            bindings = <&tap_hold_layer_sticky_mod 7 LALT>, <&to 7>;
+            bindings = <&tap_hold_layer_sticky_mod 7 LCTRL>, <&to 7>;
         };
 
         tap_hold_sticky_layer_keypress: tap_hold_sticky_layer_keypress {
@@ -259,6 +259,15 @@
             #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <230>;
+        };
+
+        taphold_stickykp_kp_hold: taphold_stickykp_kp_hold {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TAPHOLD_STICKYKP_KP_HOLD";
+            bindings = <&kp>, <&sticky_slow>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
         };
     };
 
@@ -326,7 +335,7 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&kp CAPSLOCK  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp PRINTSCREEN  &kp TAB  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp BACKSPACE  &kp DEL  &taphold_kp_kp_hold LCTRL ESCAPE  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &ctrl_meta  &nav_layer_with_alt  &layer_key_tap_hold 2 SPACE  &shift_tools  &tap_hold_sticky_layer_keypress LEFT_SHIFT 6  &layer_key_tap_hold 1 ENTER  &number_layer_tapdance
+&kp CAPSLOCK  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp PRINTSCREEN  &kp TAB  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp BACKSPACE  &kp DEL  &taphold_kp_kp_hold LCTRL ESCAPE  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &ctrl_meta  &nav_layer_with_ctrl  &layer_key_tap_hold 2 SPACE  &shift_tools  &tap_hold_sticky_layer_keypress LEFT_SHIFT 6  &layer_key_tap_hold 1 ENTER  &number_layer_tapdance
             >;
         };
 
