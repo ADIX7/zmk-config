@@ -292,13 +292,14 @@
             tapping-term-ms = <200>;
         };
 
-        caps__caps_word: caps__caps_word {
-            compatible = "zmk,behavior-mod-morph";
-            label = "CAPS__CAPS_WORD";
-            bindings = <&kp CAPS>, <&caps_word>;
+        taphold_caps: taphold_caps {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TAPHOLD_CAPS";
+            bindings = <&caps_word>, <&kp>;
 
-            #binding-cells = <0>;
-            mods = <(MOD_LCTL|MOD_LALT)>;
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
         };
     };
 
@@ -366,7 +367,7 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&caps__caps_word  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp PRINTSCREEN  &kp TAB  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp DEL  &kp BACKSPACE  &taphold_kp_kp_hold LCTRL ESCAPE  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &ctrl_meta  &nav_layer_with_ctrl  &layer_key_tap_hold 2 SPACE  &shift_tools  &tap_hold_sl_slow__keypress LEFT_SHIFT 7  &layer_key_tap_hold 1 ENTER  &number_layer_tapdance
+&taphold_caps 0 CAPS  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp PRINTSCREEN  &kp TAB  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp DEL  &kp BACKSPACE  &taphold_kp_kp_hold LCTRL ESCAPE  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &ctrl_meta  &nav_layer_with_ctrl  &layer_key_tap_hold 2 SPACE  &shift_tools  &tap_hold_sl_slow__keypress LEFT_SHIFT 7  &layer_key_tap_hold 1 ENTER  &number_layer_tapdance
             >;
         };
 
