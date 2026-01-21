@@ -306,7 +306,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LALT_TOOLS";
             #binding-cells = <0>;
-            bindings = <&sticky_slow LALT>, <&taphold_mo_stickylayer 9 9>;
+            bindings = <&sticky_slow LALT>, <&sl 9>;
         };
 
         tapdance_caps: tapdance_caps {
