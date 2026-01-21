@@ -399,7 +399,7 @@
 
         game2 {
             bindings = <
-&trans  &trans  &kp R  &trans  &kp F  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F5  &kp R  &trans  &kp F  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp F6  &kp F7  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp F8  &kp Y  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
