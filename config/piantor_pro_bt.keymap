@@ -17,9 +17,9 @@
 
 / {
     behaviors {
-        tap_hold_mod_left: tap_hold_mod_left {
+        taphold_mod_left: taphold_mod_left {
             compatible = "zmk,behavior-hold-tap";
-            label = "TAP_HOLD_MOD_LEFT";
+            label = "TAPHOLD_MOD_LEFT";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -33,7 +33,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "A_HANDLER";
             #binding-cells = <0>;
-            bindings = <&tap_hold_mod_right LEFT_WIN A>, <&aa_tap_hold A 0>;
+            bindings = <&taphold_mod_right LEFT_WIN A>, <&aa_tap_hold A 0>;
         };
 
         aa_tap_hold: aa_tap_hold {
@@ -52,7 +52,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "S_HANDLER";
             #binding-cells = <0>;
-            bindings = <&tap_hold_mod_right LEFT_ALT S>, <&ss_tap_hold S 0>;
+            bindings = <&taphold_mod_right LEFT_ALT S>, <&ss_tap_hold S 0>;
         };
 
         ss_tap_hold: ss_tap_hold {
@@ -71,7 +71,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "D_HANDLER";
             #binding-cells = <0>;
-            bindings = <&tap_hold_mod_right LCTRL D>, <&dd_tap_hold D 0>;
+            bindings = <&taphold_mod_right LCTRL D>, <&dd_tap_hold D 0>;
         };
 
         dd_tap_hold: dd_tap_hold {
@@ -90,7 +90,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "F_HANDLER";
             #binding-cells = <0>;
-            bindings = <&tap_hold_mod_right LSHFT F>, <&ff_tap_hold F 0>;
+            bindings = <&taphold_mod_right LSHFT F>, <&ff_tap_hold F 0>;
         };
 
         ff_tap_hold: ff_tap_hold {
@@ -109,7 +109,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "J_HANDLER";
             #binding-cells = <0>;
-            bindings = <&tap_hold_mod_left LEFT_SHIFT J>, <&jj_tap_hold J 0>;
+            bindings = <&taphold_mod_left LEFT_SHIFT J>, <&jj_tap_hold J 0>;
         };
 
         jj_tap_hold: jj_tap_hold {
@@ -128,7 +128,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "K_HANDLER";
             #binding-cells = <0>;
-            bindings = <&tap_hold_mod_left LCTRL K>, <&kk_tap_hold K 0>;
+            bindings = <&taphold_mod_left LCTRL K>, <&kk_tap_hold K 0>;
         };
 
         kk_tap_hold: kk_tap_hold {
@@ -147,7 +147,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "L_HANDLER";
             #binding-cells = <0>;
-            bindings = <&tap_hold_mod_left LEFT_ALT L>, <&ll_tap_hold L 0>;
+            bindings = <&taphold_mod_left LEFT_ALT L>, <&ll_tap_hold L 0>;
         };
 
         ll_tap_hold: ll_tap_hold {
@@ -166,12 +166,12 @@
             compatible = "zmk,behavior-tap-dance";
             label = "BKSP_HANDLER";
             #binding-cells = <0>;
-            bindings = <&tap_hold_mod_left LMETA DEL>, <&kp DEL>;
+            bindings = <&taphold_mod_left LMETA DEL>, <&kp DEL>;
         };
 
-        layer_key_tap_hold: layer_key_tap_hold {
+        layer_key_taphold: layer_key_taphold {
             compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_KEY_TAP_HOLD";
+            label = "LAYER_KEY_TAPHOLD";
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
@@ -181,9 +181,9 @@
             tapping-term-ms = <200>;
         };
 
-        tap_hold_mod_right: tap_hold_mod_right {
+        taphold_mod_right: taphold_mod_right {
             compatible = "zmk,behavior-hold-tap";
-            label = "TAP_HOLD_MOD_RIGHT";
+            label = "TAPHOLD_MOD_RIGHT";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -197,7 +197,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "CTRL_META";
             #binding-cells = <0>;
-            bindings = <&mod_ctrl__s_ctrl>, <&mod_meta__s_meta>;
+            bindings = <&none>, <&none>;
         };
 
         shift_tools: shift_tools {
@@ -224,9 +224,9 @@
             bindings = <&mo 6>, <&tog 6>;
         };
 
-        tap_hold_layer_sticky_mod: tap_hold_layer_sticky_mod {
+        taphold_layer_sticky_mod: taphold_layer_sticky_mod {
             compatible = "zmk,behavior-hold-tap";
-            label = "TAP_HOLD_LAYER_STICKY_MOD";
+            label = "TAPHOLD_LAYER_STICKY_MOD";
             bindings = <&mo>, <&sticky_slow>;
 
             #binding-cells = <2>;
@@ -240,12 +240,12 @@
             compatible = "zmk,behavior-tap-dance";
             label = "NAV_LAYER_WITH_CTRL";
             #binding-cells = <0>;
-            bindings = <&tap_hold_layer_sticky_mod 8 LCTRL>, <&to 8>;
+            bindings = <&taphold_layer_sticky_mod 8 LCTRL>, <&to 8>;
         };
 
-        tap_hold_sl_slow__keypress: tap_hold_sl_slow__keypress {
+        taphold_sl_slow__keypress: taphold_sl_slow__keypress {
             compatible = "zmk,behavior-hold-tap";
-            label = "TAP_HOLD_SL_SLOW__KEYPRESS";
+            label = "TAPHOLD_SL_SLOW__KEYPRESS";
             bindings = <&kp>, <&sticky_layer_slow_release>;
 
             #binding-cells = <2>;
@@ -318,25 +318,6 @@
             bindings = <&kp CAPSLOCK>, <&caps_word>;
         };
 
-        mod_ctrl__s_ctrl: mod_ctrl__s_ctrl {
-            compatible = "zmk,behavior-mod-morph";
-            label = "MOD_CTRL__S_CTRL";
-            bindings = <&sticky_slow LCTRL>, <&sticky_slow LS(LCTRL)>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
-        mod_meta__s_meta: mod_meta__s_meta {
-            compatible = "zmk,behavior-mod-morph";
-            label = "MOD_META__S_META";
-            bindings = <&sticky_slow LGUI>, <&sticky_slow LS(LGUI)>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-            keep-mods = <(MOD_LSFT)>;
-        };
-
         taphold_caps: taphold_caps {
             compatible = "zmk,behavior-hold-tap";
             label = "TAPHOLD_CAPS";
@@ -345,6 +326,16 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
+        };
+
+        taphold_stickykp_kp_balanced: taphold_stickykp_kp_balanced {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TAPHOLD_STICKYKP_KP_BALANCED";
+            bindings = <&kp>, <&sticky_slow>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
         };
     };
 
@@ -421,7 +412,7 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&taphold_caps CAPSLOCK 0  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp PRINTSCREEN  &kp TAB  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp DEL  &kp BACKSPACE  &taphold_kp_kp_hold LCTRL ESCAPE  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &mod_meta__s_meta  &nav_layer_with_ctrl  &layer_key_tap_hold 2 SPACE  &shift_tools2 LSHIFT 0  &tap_hold_sl_slow__keypress LEFT_SHIFT 7  &layer_key_tap_hold 1 ENTER  &number_layer_tapdance
+&taphold_caps CAPSLOCK 0  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp PRINTSCREEN  &kp TAB  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp DEL  &kp BACKSPACE  &taphold_kp_kp_hold LCTRL ESCAPE  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &taphold_stickykp_kp_balanced LGUI LGUI  &nav_layer_with_ctrl  &layer_key_taphold 2 SPACE  &shift_tools2 LSHIFT 0  &taphold_sl_slow__keypress LEFT_SHIFT 7  &layer_key_taphold 1 ENTER  &number_layer_tapdance
             >;
         };
 
