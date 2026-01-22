@@ -197,7 +197,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "CTRL_META";
             #binding-cells = <0>;
-            bindings = <&sticky_slow LCTRL>, <&sticky_slow LEFT_META>;
+            bindings = <&mod_ctrl__s_ctrl>, <&mod_meta__s_meta>;
         };
 
         shift_tools: shift_tools {
@@ -316,6 +316,24 @@
             label = "TAPDANCE_CAPS";
             #binding-cells = <0>;
             bindings = <&kp CAPSLOCK>, <&caps_word>;
+        };
+
+        mod_ctrl__s_ctrl: mod_ctrl__s_ctrl {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MOD_CTRL__S_CTRL";
+            bindings = <&sticky_slow LCTRL>, <&sticky_slow LS(LCTRL)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        mod_meta__s_meta: mod_meta__s_meta {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MOD_META__S_META";
+            bindings = <&sticky_slow LGUI>, <&sticky_slow LS(LGUI)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
         };
     };
 
