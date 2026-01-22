@@ -412,7 +412,7 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&taphold_caps CAPSLOCK 0  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp PRINTSCREEN  &kp TAB  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp DEL  &kp BACKSPACE  &taphold_kp_kp_hold LCTRL ESCAPE  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &taphold_stickykp_kp_balanced LGUI LGUI  &nav_layer_with_ctrl  &layer_key_taphold 2 SPACE  &shift_tools2 LSHIFT 0  &taphold_sl_slow__keypress LEFT_SHIFT 7  &layer_key_taphold 1 ENTER  &number_layer_tapdance
+&taphold_caps CAPSLOCK 0  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp U  &kp Y  &kp DEL  &kp PRINTSCREEN  &kp TAB  &kp A  &kp R  &kp S  &kp T  &kp G  &kp M  &kp N  &kp E  &kp I  &kp O  &kp BACKSPACE  &taphold_kp_kp_hold LCTRL ESCAPE  &kp Z  &kp X  &kp C  &kp D  &kp V  &kp K  &kp H  &kp COMMA  &kp DOT  &kp SLASH  &taphold_stickykp_kp_balanced LGUI LGUI  &nav_layer_with_ctrl  &layer_key_taphold 2 SPACE  &shift_tools2 LSHIFT 0  &taphold_sl_slow__keypress LEFT_SHIFT 7  &layer_key_taphold 1 ENTER  &number_layer_tapdance
             >;
         };
 
