@@ -330,7 +330,7 @@
         mod_meta__s_meta: mod_meta__s_meta {
             compatible = "zmk,behavior-mod-morph";
             label = "MOD_META__S_META";
-            bindings = <&sticky_slow LGUI>, <&sticky_slow LGUI>;
+            bindings = <&sticky_slow LGUI>, <&sticky_slow LS(LGUI)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
