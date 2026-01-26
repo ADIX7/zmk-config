@@ -29,16 +29,16 @@
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;
         };
 
-        a_handler: a_handler {
+        lmeta_handler: lmeta_handler {
             compatible = "zmk,behavior-tap-dance";
-            label = "A_HANDLER";
+            label = "LMETA_HANDLER";
             #binding-cells = <0>;
-            bindings = <&taphold_mod_right LEFT_WIN A>, <&aa_tap_hold A 0>;
+            bindings = <&taphold_mod_right LEFT_WIN A>, <&lmeta_taphold A 0>;
         };
 
-        aa_tap_hold: aa_tap_hold {
+        lmeta_taphold : lmeta_taphold  {
             compatible = "zmk,behavior-hold-tap";
-            label = "AA_TAP_HOLD";
+            label = "LMETA_TAPHOLD";
             bindings = <&kp>, <&aa>;
 
             #binding-cells = <2>;
@@ -48,16 +48,16 @@
             hold-trigger-on-release;
         };
 
-        s_handler: s_handler {
+        lalt_handler: lalt_handler {
             compatible = "zmk,behavior-tap-dance";
-            label = "S_HANDLER";
+            label = "LALT_HANDLER";
             #binding-cells = <0>;
             bindings = <&taphold_mod_right LEFT_ALT S>, <&ss_tap_hold S 0>;
         };
 
-        ss_tap_hold: ss_tap_hold {
+        lalt_tap_hold: lalt_tap_hold {
             compatible = "zmk,behavior-hold-tap";
-            label = "SS_TAP_HOLD";
+            label = "LALT_TAP_HOLD";
             bindings = <&kp>, <&ss>;
 
             #binding-cells = <2>;
@@ -67,16 +67,16 @@
             hold-while-undecided;
         };
 
-        d_handler: d_handler {
+        lctrl_handler: lctrl_handler {
             compatible = "zmk,behavior-tap-dance";
-            label = "D_HANDLER";
+            label = "lctrl_handler";
             #binding-cells = <0>;
-            bindings = <&taphold_mod_right LCTRL D>, <&dd_tap_hold D 0>;
+            bindings = <&taphold_mod_right LCTRL D>, <&lctrl_tap_hold D 0>;
         };
 
-        dd_tap_hold: dd_tap_hold {
+        lctrl_tap_hold: lctrl_tap_hold  {
             compatible = "zmk,behavior-hold-tap";
-            label = "DD_TAP_HOLD";
+            label = "LCTRL_TAP_HOLD";
             bindings = <&kp>, <&dd>;
 
             #binding-cells = <2>;
@@ -86,16 +86,16 @@
             hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
         };
 
-        f_handler: f_handler {
+        lshift_handler: lshift_handler {
             compatible = "zmk,behavior-tap-dance";
-            label = "F_HANDLER";
+            label = "LSHIFT_HANDLER";
             #binding-cells = <0>;
-            bindings = <&taphold_mod_right LSHFT F>, <&ff_tap_hold F 0>;
+            bindings = <&taphold_mod_right LSHFT F>, <&lshift_tap_hold F 0>;
         };
 
-        ff_tap_hold: ff_tap_hold {
+        lshift_tap_hold : lshift_tap_hold {
             compatible = "zmk,behavior-hold-tap";
-            label = "FF_TAP_HOLD";
+            label = "LSHIFT_TAP_HOLD";
             bindings = <&kp>, <&ff>;
 
             #binding-cells = <2>;
@@ -105,16 +105,16 @@
             hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
         };
 
-        j_handler: j_handler {
+        rshift_handler: rshift_handler {
             compatible = "zmk,behavior-tap-dance";
-            label = "J_HANDLER";
+            label = "RSHIFT_HANDLER";
             #binding-cells = <0>;
             bindings = <&taphold_mod_left LEFT_SHIFT J>, <&jj_tap_hold J 0>;
         };
 
-        jj_tap_hold: jj_tap_hold {
+        rshift_tap_hold: rshift_tap_hold {
             compatible = "zmk,behavior-hold-tap";
-            label = "JJ_TAP_HOLD";
+            label = "rshift_tap_hold";
             bindings = <&kp>, <&jj>;
 
             #binding-cells = <2>;
@@ -124,16 +124,16 @@
             hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
         };
 
-        k_handler: k_handler {
+        rctrl_handler: rctrl_handler {
             compatible = "zmk,behavior-tap-dance";
-            label = "K_HANDLER";
+            label = "RCTRL_HANDLER";
             #binding-cells = <0>;
-            bindings = <&taphold_mod_left LCTRL K>, <&kk_tap_hold K 0>;
+            bindings = <&taphold_mod_left LCTRL K>, <&rctrl_tap_hold K 0>;
         };
 
-        kk_tap_hold: kk_tap_hold {
+        rctrl_tap_hold : rctrl_tap_hold  {
             compatible = "zmk,behavior-hold-tap";
-            label = "KK_TAP_HOLD";
+            label = "RCTRL_TAP_HOLD";
             bindings = <&kp>, <&kk>;
 
             #binding-cells = <2>;
@@ -143,16 +143,16 @@
             hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
         };
 
-        l_handler: l_handler {
+        ralt_handler: ralt_handler {
             compatible = "zmk,behavior-tap-dance";
-            label = "L_HANDLER";
+            label = "RALT_HANDLER";
             #binding-cells = <0>;
-            bindings = <&taphold_mod_left LEFT_ALT L>, <&ll_tap_hold L 0>;
+            bindings = <&taphold_mod_left LEFT_ALT L>, <&ralt_tap_hold L 0>;
         };
 
-        ll_tap_hold: ll_tap_hold {
+        ralt_tap_hold: ralt_tap_hold {
             compatible = "zmk,behavior-hold-tap";
-            label = "LL_TAP_HOLD";
+            label = "RALT_TAP_HOLD";
             bindings = <&kp>, <&ll>;
 
             #binding-cells = <2>;
@@ -162,9 +162,9 @@
             hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
         };
 
-        bksp_handler: bksp_handler {
+        rmeta_handler: rmeta_handler {
             compatible = "zmk,behavior-tap-dance";
-            label = "BKSP_HANDLER";
+            label = "RMETA_HANDLER";
             #binding-cells = <0>;
             bindings = <&taphold_mod_left LMETA DEL>, <&kp DEL>;
         };
@@ -468,7 +468,7 @@
         homerow {
             display-name = "HOMEROW";
             bindings = <
-&kp CAPSLOCK  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp PRINTSCREEN  &kp TAB  &a_handler  &s_handler  &d_handler  &f_handler  &kp G  &kp H  &j_handler  &k_handler  &l_handler  &bksp_handler  &kp BACKSPACE  &kp ESC  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &tog 5  &trans  &trans  &trans  &trans  &trans  &trans
+&kp CAPSLOCK  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp PRINTSCREEN  &kp TAB  &lmeta_handler  &lalt_handler  &lctrl_handler  &lshift_handler  &kp G  &kp H  &rshift_handler  &rctrl_handler  &ralt_handler  &rmeta_handler  &kp BACKSPACE  &kp ESC  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &tog 5  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
