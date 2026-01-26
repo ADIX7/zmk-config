@@ -317,7 +317,7 @@
         homerow {
             display-name = "HOMEROW";
             bindings = <
-&kp CAPSLOCK  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp PRINTSCREEN  &kp TAB  &lmeta_handler  &lalt_handler  &lctrl_handler  &lshift_handler  &kp G  &kp H  &rshift_handler  &rctrl_handler  &ralt_handler  &rmeta_handler  &kp BACKSPACE  &kp ESC  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &tog 5  &trans  &trans  &trans  &trans  &trans  &trans
+&kp CAPSLOCK  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &lmeta_handler  &lalt_handler  &lctrl_handler  &lshift_handler  &trans  &trans  &rshift_handler  &rctrl_handler  &ralt_handler  &rmeta_handler  &trans  &kp ESC  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &tog 5  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
