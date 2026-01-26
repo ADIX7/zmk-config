@@ -33,140 +33,56 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LMETA_HANDLER";
             #binding-cells = <0>;
-            bindings = <&taphold_mod_right LEFT_WIN A>, <&lmeta_taphold A 0>;
-        };
-
-        lmeta_taphold : lmeta_taphold  {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LMETA_TAPHOLD";
-            bindings = <&kp>, <&aa>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
-            hold-while-undecided;
-            hold-trigger-on-release;
+            bindings = <&taphold_mod_right LEFT_WIN A>, <&kp A>;
         };
 
         lalt_handler: lalt_handler {
             compatible = "zmk,behavior-tap-dance";
             label = "LALT_HANDLER";
             #binding-cells = <0>;
-            bindings = <&taphold_mod_right LEFT_ALT S>, <&ss_tap_hold S 0>;
-        };
-
-        lalt_tap_hold: lalt_tap_hold {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LALT_TAP_HOLD";
-            bindings = <&kp>, <&ss>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
-            hold-trigger-on-release;
-            hold-while-undecided;
+            bindings = <&taphold_mod_right LEFT_ALT R>, <&kp R>;
         };
 
         lctrl_handler: lctrl_handler {
             compatible = "zmk,behavior-tap-dance";
             label = "lctrl_handler";
             #binding-cells = <0>;
-            bindings = <&taphold_mod_right LCTRL D>, <&lctrl_tap_hold D 0>;
-        };
-
-        lctrl_tap_hold: lctrl_tap_hold  {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LCTRL_TAP_HOLD";
-            bindings = <&kp>, <&dd>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            hold-while-undecided;
-            hold-trigger-on-release;
-            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
+            bindings = <&taphold_mod_right LCTRL S>, <&kp S>;
         };
 
         lshift_handler: lshift_handler {
             compatible = "zmk,behavior-tap-dance";
             label = "LSHIFT_HANDLER";
             #binding-cells = <0>;
-            bindings = <&taphold_mod_right LSHFT F>, <&lshift_tap_hold F 0>;
-        };
-
-        lshift_tap_hold : lshift_tap_hold {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LSHIFT_TAP_HOLD";
-            bindings = <&kp>, <&ff>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            hold-while-undecided;
-            hold-trigger-on-release;
-            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
+            bindings = <&taphold_mod_right LSHFT T>, <&kp T>;
         };
 
         rshift_handler: rshift_handler {
             compatible = "zmk,behavior-tap-dance";
             label = "RSHIFT_HANDLER";
             #binding-cells = <0>;
-            bindings = <&taphold_mod_left LEFT_SHIFT J>, <&jj_tap_hold J 0>;
-        };
-
-        rshift_tap_hold: rshift_tap_hold {
-            compatible = "zmk,behavior-hold-tap";
-            label = "rshift_tap_hold";
-            bindings = <&kp>, <&jj>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            hold-while-undecided;
-            hold-trigger-on-release;
-            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
+            bindings = <&taphold_mod_left LEFT_SHIFT N>, <&kp N>;
         };
 
         rctrl_handler: rctrl_handler {
             compatible = "zmk,behavior-tap-dance";
             label = "RCTRL_HANDLER";
             #binding-cells = <0>;
-            bindings = <&taphold_mod_left LCTRL K>, <&rctrl_tap_hold K 0>;
-        };
-
-        rctrl_tap_hold : rctrl_tap_hold  {
-            compatible = "zmk,behavior-hold-tap";
-            label = "RCTRL_TAP_HOLD";
-            bindings = <&kp>, <&kk>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            hold-while-undecided;
-            hold-trigger-on-release;
-            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
+            bindings = <&taphold_mod_left LCTRL E>, <&kp E>;
         };
 
         ralt_handler: ralt_handler {
             compatible = "zmk,behavior-tap-dance";
             label = "RALT_HANDLER";
             #binding-cells = <0>;
-            bindings = <&taphold_mod_left LEFT_ALT L>, <&ralt_tap_hold L 0>;
-        };
-
-        ralt_tap_hold: ralt_tap_hold {
-            compatible = "zmk,behavior-hold-tap";
-            label = "RALT_TAP_HOLD";
-            bindings = <&kp>, <&ll>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            hold-while-undecided;
-            hold-trigger-on-release;
-            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
+            bindings = <&taphold_mod_left LEFT_ALT I>, <&kp I>;
         };
 
         rmeta_handler: rmeta_handler {
             compatible = "zmk,behavior-tap-dance";
             label = "RMETA_HANDLER";
             #binding-cells = <0>;
-            bindings = <&taphold_mod_left LMETA DEL>, <&kp DEL>;
+            bindings = <&taphold_mod_left LMETA O>, <&kp O>;
         };
 
         layer_key_taphold: layer_key_taphold {
@@ -191,22 +107,6 @@
             flavor = "balanced";
             hold-trigger-on-release;
             hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
-        };
-
-        ctrl_meta: ctrl_meta {
-            compatible = "zmk,behavior-tap-dance";
-            label = "CTRL_META";
-            #binding-cells = <0>;
-            bindings = <&none>, <&none>;
-        };
-
-        shift_tools: shift_tools {
-            compatible = "zmk,behavior-tap-dance";
-            label = "SHIFT_TOOLS";
-            #binding-cells = <0>;
-            bindings =
-                <&taphold_stickykp_kp_hold_undec LEFT_SHIFT LALT>,
-                <&taphold_mo_stickylayer 9 9>;
         };
 
         sticky_slow: sticky_slow {
@@ -343,57 +243,6 @@
             label = "TAPDANCE_LMETA";
             #binding-cells = <0>;
             bindings = <&sticky_slow LGUI>, <&kp LGUI>;
-        };
-    };
-
-    macros {
-        aa: aa {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp A>;
-            label = "AA";
-        };
-
-        ss: ss {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp S>;
-            label = "SS";
-        };
-
-        dd: dd {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp D>;
-            label = "DD";
-        };
-
-        ff: ff {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp F>;
-            label = "FF";
-        };
-
-        jj: jj {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp J>;
-            label = "JJ";
-        };
-
-        kk: kk {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp K>;
-            label = "KK";
-        };
-
-        ll: ll {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp L>;
-            label = "LL";
         };
     };
 
