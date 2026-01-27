@@ -117,13 +117,6 @@
             release-after-ms = <2000>;
         };
 
-        number_layer_tapdance: number_layer_tapdance {
-            compatible = "zmk,behavior-tap-dance";
-            label = "NUMBER_LAYER_TAPDANCE";
-            #binding-cells = <0>;
-            bindings = <&mo 6>, <&tog 6>;
-        };
-
         taphold_layer_sticky_mod: taphold_layer_sticky_mod {
             compatible = "zmk,behavior-hold-tap";
             label = "TAPHOLD_LAYER_STICKY_MOD";
@@ -143,9 +136,9 @@
             bindings = <&taphold_layer_sticky_mod 8 LCTRL>, <&to 8>;
         };
 
-        taphold_sl_slow__keypress: taphold_sl_slow__keypress {
+        taphold_stickylayer_slow__kp: taphold_stickylayer_slow__kp {
             compatible = "zmk,behavior-hold-tap";
-            label = "TAPHOLD_SL_SLOW__KEYPRESS";
+            label = "TAPHOLD_STICKYLAYER_SLOW__KP";
             bindings = <&kp>, <&sticky_layer_slow_release>;
 
             #binding-cells = <2>;
@@ -245,21 +238,21 @@
             bindings = <&sticky_slow LGUI>, <&kp LGUI>;
         };
 
-        taphold_function_number: taphold_function_number {
+        taphold_enter_number: taphold_enter_number {
             compatible = "zmk,behavior-hold-tap";
-            label = "TAPHOLD_FUNCTION_NUMBER";
-            bindings = <&mo>, <&tapdance_function_number>;
+            label = "TAPHOLD_ENTER_NUMBER";
+            bindings = <&mo>, <&tapdance_enter_number>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "balanced";
         };
 
-        tapdance_function_number: tapdance_function_number {
+        tapdance_enter_number: tapdance_enter_number {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCE_FUNCTION_NUMBER";
+            label = "TAPDANCE_ENTER_NUMBER";
             #binding-cells = <0>;
-            bindings = <&sticky_layer_slow_release 7>, <&to 6>;
+            bindings = <&kp ENTER>, <&to 6>;
 
             tapping-term-ms = <250>;
         };
@@ -287,7 +280,7 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&taphold_caps CAPSLOCK 0  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp U  &kp Y  &kp DEL  &kp PRINTSCREEN  &kp TAB  &kp A  &kp R  &kp S  &kp T  &kp G  &kp M  &kp N  &kp E  &kp I  &kp O  &kp BACKSPACE  &taphold_kp_kp_hold LCTRL ESCAPE  &kp Z  &kp X  &kp C  &kp D  &kp V  &kp K  &kp H  &kp COMMA  &kp DOT  &kp SLASH  &taphold_lmeta LGUI LGUI  &nav_layer_with_ctrl  &taphold_kp_mo 2 SPACE  &shift_tools2 LSHIFT 0  &taphold_kp_kp_hold LEFT_SHIFT ENTER  &taphold_mo_stickylayer 1 1  &taphold_function_number 6 7
+&taphold_caps CAPSLOCK 0  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp U  &kp Y  &kp DEL  &kp PRINTSCREEN  &kp TAB  &kp A  &kp R  &kp S  &kp T  &kp G  &kp M  &kp N  &kp E  &kp I  &kp O  &kp BACKSPACE  &taphold_kp_kp_hold LCTRL ESCAPE  &kp Z  &kp X  &kp C  &kp D  &kp V  &kp K  &kp H  &kp COMMA  &kp DOT  &kp SLASH  &taphold_lmeta LGUI LGUI  &nav_layer_with_ctrl  &taphold_kp_mo 2 SPACE  &shift_tools2 LSHIFT 0  &taphold_stickylayer_slow__kp LEFT_SHIFT 7  &taphold_mo_stickylayer 1 1  &taphold_enter_number 6 7
             >;
         };
 
