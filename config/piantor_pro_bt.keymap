@@ -306,7 +306,7 @@
             //                    | GUI |     | SPC | ENT |     | ALT |
 
             bindings = <
-&none  &none  &none  &kp V  &kp B  &none  &kp C_VOLUME_UP  &none  &none  &none  &none  &none  &none  &kp NON_US_BSLH  &kp EQUAL  &kp SEMICOLON  &kp APOSTROPHE  &kp RIGHT_BRACKET  &kp C_VOLUME_DOWN  &kp LSHIFT  &kp LCTRL  &kp LALT  &kp LMETA  &kp BACKSPACE  &none  &kp N0  &kp LEFT_BRACKET  &kp MINUS  &kp BACKSLASH  &none  &kp C_MUTE  &none  &none  &none  &none  &none  &trans  &trans  &trans  &trans  &trans  &trans
+&none  &none  &none  &kp V  &kp B  &none  &kp C_VOLUME_UP  &none  &none  &none  &none  &none  &none  &kp NON_US_BSLH  &kp EQUAL  &kp SEMICOLON  &kp APOSTROPHE  &kp RIGHT_BRACKET  &kp C_VOLUME_DOWN  &taphold_mod_left LSHIFT J  &taphold_mod_left LCTRL K  &kp LALT  &kp LMETA  &kp BACKSPACE  &none  &kp N0  &kp LEFT_BRACKET  &kp MINUS  &kp BACKSLASH  &none  &kp C_MUTE  &none  &none  &none  &none  &none  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
