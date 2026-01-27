@@ -85,9 +85,9 @@
             bindings = <&taphold_mod_left LMETA O>, <&kp O>;
         };
 
-        layer_key_taphold: layer_key_taphold {
+        taphold_kp_mo: taphold_kp_mo {
             compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_KEY_TAPHOLD";
+            label = "TAPHOLD_KP_MO";
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
@@ -244,6 +244,23 @@
             #binding-cells = <0>;
             bindings = <&sticky_slow LGUI>, <&kp LGUI>;
         };
+
+        taphold_function_number: taphold_function_number {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TAPHOLD_FUNCTION_NUMBER";
+            bindings = <&mo>, <&tapdance_function_number>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+        };
+
+        tapdance_function_number: tapdance_function_number {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPDANCE_FUNCTION_NUMBER";
+            #binding-cells = <0>;
+            bindings = <&sticky_layer_slow_release 7>, <&to 6>;
+        };
     };
 
     combos {
@@ -268,7 +285,7 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&taphold_caps CAPSLOCK 0  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp U  &kp Y  &kp DEL  &kp PRINTSCREEN  &kp TAB  &kp A  &kp R  &kp S  &kp T  &kp G  &kp M  &kp N  &kp E  &kp I  &kp O  &kp BACKSPACE  &taphold_kp_kp_hold LCTRL ESCAPE  &kp Z  &kp X  &kp C  &kp D  &kp V  &kp K  &kp H  &kp COMMA  &kp DOT  &kp SLASH  &taphold_lmeta LGUI LGUI  &nav_layer_with_ctrl  &layer_key_taphold 2 SPACE  &shift_tools2 LSHIFT 0  &taphold_sl_slow__keypress LEFT_SHIFT 7  &layer_key_taphold 1 ENTER  &number_layer_tapdance
+&taphold_caps CAPSLOCK 0  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp U  &kp Y  &kp DEL  &kp PRINTSCREEN  &kp TAB  &kp A  &kp R  &kp S  &kp T  &kp G  &kp M  &kp N  &kp E  &kp I  &kp O  &kp BACKSPACE  &taphold_kp_kp_hold LCTRL ESCAPE  &kp Z  &kp X  &kp C  &kp D  &kp V  &kp K  &kp H  &kp COMMA  &kp DOT  &kp SLASH  &taphold_lmeta LGUI LGUI  &nav_layer_with_ctrl  &taphold_kp_mo 2 SPACE  &shift_tools2 LSHIFT 0  &taphold_kp_kp_hold LEFT_SHIFT ENTER  &taphold_mo_stickylayer 1 1  &taphold_function_number 6 0
             >;
         };
 
