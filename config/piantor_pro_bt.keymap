@@ -272,6 +272,11 @@
             bindings = <&mo 9>;
             key-positions = <38 39>;
         };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <37 40>;
+        };
     };
 
     keymap {
