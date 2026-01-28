@@ -193,7 +193,7 @@
             tapping-term-ms = <200>;
             bindings = <&kp>, <&lshift_tools>;
 
-            hold-while-undecided;
+            hold-while-undecided-linger;
         };
 
         lshift_tools: lshift_tools {
@@ -203,13 +203,6 @@
             bindings = <&sticky_kp_slow LSHIFT>, <&sticky_layer_slow_release 9>;
 
             tapping-term-ms = <400>;
-        };
-
-        tapdance_caps: tapdance_caps {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCE_CAPS";
-            #binding-cells = <0>;
-            bindings = <&kp CAPSLOCK>, <&caps_word>;
         };
 
         taphold_caps: taphold_caps {
@@ -230,6 +223,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "balanced";
+            hold-while-undecided-linger;
         };
 
         tapdance_lmeta: tapdance_lmeta {
@@ -237,6 +231,8 @@
             label = "TAPDANCE_LMETA";
             #binding-cells = <0>;
             bindings = <&sticky_kp_slow LGUI>, <&kp LGUI>;
+
+            tapping-term-ms = <400>;
         };
 
         taphold_enter_number: taphold_enter_number {
@@ -272,11 +268,6 @@
         tools {
             bindings = <&mo 9>;
             key-positions = <38 39>;
-        };
-
-        enter_thumb {
-            bindings = <&kp ENTER>;
-            key-positions = <37 40>;
         };
 
         enter {
