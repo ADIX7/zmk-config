@@ -116,6 +116,7 @@
             #binding-cells = <1>;
             release-after-ms = <2000>;
             lazy;
+            ignore-modifiers;
         };
 
         taphold_layer_sticky_mo: taphold_layer_sticky_mo {
