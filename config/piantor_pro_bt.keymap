@@ -172,6 +172,7 @@
             bindings = <&mo>;
             #binding-cells = <1>;
             release-after-ms = <1000>;
+            ignore-modifiers;
         };
 
         taphold_mo_stickylayer: taphold_mo_stickylayer {
