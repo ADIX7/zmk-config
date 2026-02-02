@@ -298,14 +298,14 @@
         copy_newtab_paste: copy_newtab_paste {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(C) &kp LC(T) &kp LC(P)>;
+            bindings = <&kp LC(C) &kp LC(T) &kp LC(V) &kp ENTER>;
             label = "COPY_NEWTAB_PASTE";
         };
 
         copy_find_paste: copy_find_paste {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(C) &kp LC(F) &kp LC(P)>;
+            bindings = <&kp LC(C) &kp LC(F) &kp LC(V)>;
             label = "COPY_FIND_PASTE";
         };
     };
