@@ -282,6 +282,32 @@
             bindings = <&sticky_kp_slow LALT>;
             key-positions = <27 28>;
         };
+
+        copy_newtab_paste {
+            bindings = <&copy_newtab_paste>;
+            key-positions = <36 29>;
+        };
+
+        copy_find_paste {
+            bindings = <&copy_find_paste>;
+            key-positions = <3 36>;
+        };
+    };
+
+    macros {
+        copy_newtab_paste: copy_newtab_paste {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(C) &kp LC(T) &kp LC(P)>;
+            label = "COPY_NEWTAB_PASTE";
+        };
+
+        copy_find_paste: copy_find_paste {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(C) &kp LC(F) &kp LC(P)>;
+            label = "COPY_FIND_PASTE";
+        };
     };
 
     keymap {
