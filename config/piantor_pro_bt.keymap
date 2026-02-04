@@ -292,6 +292,11 @@
             bindings = <&copy_find_paste>;
             key-positions = <3 36>;
         };
+
+        nav {
+            bindings = <&to 8>;
+            key-positions = <37 36>;
+        };
     };
 
     macros {
