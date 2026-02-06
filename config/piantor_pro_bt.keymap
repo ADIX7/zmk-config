@@ -297,6 +297,11 @@
             bindings = <&to 8>;
             key-positions = <37 36>;
         };
+
+        lmeta {
+            bindings = <&sticky_kp_slow LMETA>;
+            key-positions = <31 32>;
+        };
     };
 
     macros {
@@ -328,7 +333,7 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&taphold_caps CAPSLOCK 0  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp U  &kp Y  &kp DEL  &taphold_stickylayer_slow__kp PRINTSCREEN 7  &kp TAB  &kp A  &kp R  &kp S  &kp T  &kp G  &kp M  &kp N  &kp E  &kp I  &kp O  &kp BACKSPACE  &taphold_kp_kp_hold LCTRL ESCAPE  &kp Z  &kp X  &kp C  &kp D  &kp V  &kp K  &kp H  &kp COMMA  &kp DOT  &kp SLASH  &taphold_lmeta LGUI LGUI  &taphold_stickykp_siow__mo 8 LCTRL  &taphold_kp_mo 2 SPACE  &shift_tools2 LSHIFT 0  &taphold_keyreap_mo 7 0  &taphold_mo_stickylayer 1 1  &taphold_enter_number 6 ENTER
+&taphold_lmeta LMETA 0  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp U  &kp Y  &kp DEL  &taphold_stickylayer_slow__kp PRINTSCREEN 7  &kp TAB  &kp A  &kp R  &kp S  &kp T  &kp G  &kp M  &kp N  &kp E  &kp I  &kp O  &kp BACKSPACE  &taphold_kp_kp_hold LCTRL ESCAPE  &kp Z  &kp X  &kp C  &kp D  &kp V  &kp K  &kp H  &kp COMMA  &kp DOT  &kp SLASH  &taphold_caps CAPSLOCK LGUI  &taphold_stickykp_siow__mo 8 LCTRL  &taphold_kp_mo 2 SPACE  &shift_tools2 LSHIFT 0  &taphold_keyreap_mo 7 0  &taphold_mo_stickylayer 1 1  &taphold_enter_number 6 ENTER
             >;
         };
 
