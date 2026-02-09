@@ -403,7 +403,7 @@
 
         nav {
             bindings = <
-&caps_word  &none  &none  &none  &none  &none  &none  &kp C_PP  &kp C_PREVIOUS  &kp C_NEXT  &none  &none  &none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none  &none  &none  &none  &none  &none  &sticky_kp_slow LS(LA(LMETA))  &none  &none  &kp HOME  &kp END  &kp PG_UP  &kp PG_DN  &none  &tog 8  &none  &none  &trans  &trans  &trans
+&caps_word  &none  &none  &none  &none  &none  &none  &kp C_PP  &kp C_PREVIOUS  &kp C_NEXT  &none  &none  &none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none  &none  &none  &none  &none  &none  &sticky_kp_slow LA(LC(LMETA))  &none  &none  &kp HOME  &kp END  &kp PG_UP  &kp PG_DN  &none  &tog 8  &none  &none  &trans  &trans  &trans
             >;
 
             label = "NAV";
