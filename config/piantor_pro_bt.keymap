@@ -219,21 +219,12 @@
         taphold_lmeta: taphold_lmeta {
             compatible = "zmk,behavior-hold-tap";
             label = "TAPHOLD_LMETA";
-            bindings = <&kp>, <&tapdance_lmeta>;
+            bindings = <&kp>, <&sticky_kp_slow>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "balanced";
             hold-while-undecided-linger;
-        };
-
-        tapdance_lmeta: tapdance_lmeta {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCE_LMETA";
-            #binding-cells = <0>;
-            bindings = <&sticky_kp_slow LGUI>, <&kp LGUI>;
-
-            tapping-term-ms = <400>;
         };
 
         taphold_enter_number: taphold_enter_number {
@@ -292,7 +283,7 @@
 
         copy_newtab_paste {
             bindings = <&copy_newtab_paste>;
-            key-positions = <36 29>;
+            key-positions = <36 16>;
         };
 
         copy_find_paste {
@@ -306,7 +297,7 @@
         };
 
         lmeta {
-            bindings = <&sticky_kp_slow LMETA>;
+            bindings = <&taphold_lmeta LMETA LMETA>;
             key-positions = <31 32>;
         };
     };
