@@ -300,6 +300,11 @@
             bindings = <&taphold_lmeta LMETA LMETA>;
             key-positions = <31 32>;
         };
+
+        function_layer {
+            bindings = <&sticky_layer_slow_release 7>;
+            key-positions = <3 4>;
+        };
     };
 
     macros {
