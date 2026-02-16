@@ -275,6 +275,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        mm_backspace_del: mm_backspace_del {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_BACKSPACE_DEL";
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     combos {
@@ -355,7 +364,7 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&kp LEFT_META  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp U  &kp Y  &kp DEL  &taphold_stickylayer_slow__kp PRINTSCREEN 7  &kp TAB  &kp A  &kp R  &kp S  &kp T  &kp G  &kp M  &kp N  &kp E  &kp I  &kp O  &kp BACKSPACE  &taphold_kp_kp_hold LCTRL ESCAPE  &kp Z  &kp X  &kp C  &kp D  &kp V  &kp K  &kp H  &kp COMMA  &kp DOT  &kp SLASH  &taphold_caps CAPSLOCK LGUI  &taphold_stickykp_siow__mo 8 LCTRL  &taphold_kp_mo 2 SPACE  &shift_tools2 LSHIFT 0  &mm_keyrepeat__mo_function  &taphold_mo_stickylayer 1 1  &taphold_enter_number 6 ENTER
+&kp LEFT_META  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp U  &kp Y  &kp DEL  &taphold_stickylayer_slow__kp PRINTSCREEN 7  &kp TAB  &kp A  &kp R  &kp S  &kp T  &kp G  &kp M  &kp N  &kp E  &kp I  &kp O  &mm_backspace_del  &taphold_kp_kp_hold LCTRL ESCAPE  &kp Z  &kp X  &kp C  &kp D  &kp V  &kp K  &kp H  &kp COMMA  &kp DOT  &kp SLASH  &taphold_caps CAPSLOCK LGUI  &taphold_stickykp_siow__mo 8 LCTRL  &taphold_kp_mo 2 SPACE  &shift_tools2 LSHIFT 0  &mm_keyrepeat__mo_function  &taphold_mo_stickylayer 1 1  &taphold_enter_number 6 ENTER
             >;
         };
 
@@ -383,7 +392,7 @@
             //                    | GUI |     | SPC   | ENT |     | ALT |
 
             bindings = <
-&none  &kp RA(Q)  &kp RA(W)  &kp RA(C)  &kp RA(N7)  &none  &none  &kp RA(F)  &kp RA(G)  &kp RA(NON_US_BACKSLASH)  &kp RA(Z)  &none  &none  &kp RA(NUMBER_1)  &kp LS(NUMBER_4)  &kp LS(N7)  &kp RA(COMMA)  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(N8)  &kp LS(N9)  &kp RA(B)  &kp RA(N)  &kp BACKSPACE  &none  &kp RA(NUMBER_3)  &kp RA(SEMI)  &kp RA(X)  &kp RA(V)  &none  &none  &kp LS(NUMBER_6)  &kp RA(SLASH)  &kp LS(NUMBER_3)  &kp LS(N5)  &none  &trans  &trans  &trans  &trans  &trans  &trans
+&none  &kp RA(Q)  &kp RA(W)  &kp RA(C)  &kp RA(N7)  &none  &none  &kp RA(F)  &kp RA(G)  &kp RA(NON_US_BACKSLASH)  &kp RA(Z)  &none  &none  &kp RA(NUMBER_1)  &kp LS(NUMBER_4)  &kp LS(N7)  &kp RA(COMMA)  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(N8)  &kp LS(N9)  &kp RA(B)  &kp RA(N)  &mm_backspace_del  &none  &kp RA(NUMBER_3)  &kp RA(SEMI)  &kp RA(X)  &kp RA(V)  &none  &none  &kp LS(NUMBER_6)  &kp RA(SLASH)  &kp LS(NUMBER_3)  &kp LS(N5)  &none  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -404,13 +413,13 @@
         homerow {
             display-name = "HOMEROW";
             bindings = <
-&kp CAPSLOCK  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp U  &kp Y  &kp DEL  &kp PRINTSCREEN  &kp TAB  &lmeta_handler  &lalt_handler  &lctrl_handler  &lshift_handler  &kp G  &kp M  &rshift_handler  &rctrl_handler  &ralt_handler  &rmeta_handler  &kp BSPC  &kp ESC  &kp Z  &kp X  &kp C  &kp D  &kp V  &kp K  &kp H  &kp COMMA  &kp DOT  &kp FSLH  &tog 5  &trans  &trans  &trans  &trans  &trans  &trans
+&kp CAPSLOCK  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp U  &kp Y  &kp DEL  &kp PRINTSCREEN  &kp TAB  &lmeta_handler  &lalt_handler  &lctrl_handler  &lshift_handler  &kp G  &kp M  &rshift_handler  &rctrl_handler  &ralt_handler  &rmeta_handler  &mm_backspace_del  &kp ESC  &kp Z  &kp X  &kp C  &kp D  &kp V  &kp K  &kp H  &kp COMMA  &kp DOT  &kp FSLH  &tog 5  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         number {
             bindings = <
-&none  &kp COMMA  &kp N7  &kp N8  &kp N9  &none  &none  &none  &none  &none  &none  &none  &none  &kp GRAVE  &kp N4  &kp N5  &kp N6  &sticky_kp_slow LC(LMETA)  &none  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &kp BACKSPACE  &to 0  &kp DOT  &kp N1  &kp N2  &kp N3  &none  &none  &kp LS(NUMBER_6)  &kp RA(SLASH)  &kp LS(NUMBER_3)  &kp SLASH  &kp LS(N7)  &trans  &trans  &trans  &trans  &trans  &tapdance_enter_number_back
+&none  &kp COMMA  &kp N7  &kp N8  &kp N9  &none  &none  &none  &none  &none  &none  &none  &none  &kp GRAVE  &kp N4  &kp N5  &kp N6  &sticky_kp_slow LC(LMETA)  &none  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &mm_backspace_del  &to 0  &kp DOT  &kp N1  &kp N2  &kp N3  &none  &none  &kp LS(NUMBER_6)  &kp RA(SLASH)  &kp LS(NUMBER_3)  &kp SLASH  &kp LS(N7)  &trans  &trans  &trans  &trans  &trans  &tapdance_enter_number_back
             >;
 
             label = "NUM";
