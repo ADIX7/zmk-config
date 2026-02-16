@@ -13,6 +13,8 @@
 
 &key_repeat { usage-pages = <HID_USAGE_KEY HID_USAGE_CONSUMER>; };
 
+&caps_word { continue-list = <UNDERSCORE BACKSPACE DELETE BACKSLASH NON_US_BACKSLASH MINUS EQUAL APOSTROPHE LEFT_BRACKET RIGHT_BRACKET NUMBER_0 SEMICOLON>; };
+
 / {
     chosen { zmk,physical-layout = &default_layout; };
 };
