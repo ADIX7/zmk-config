@@ -123,22 +123,15 @@
             ignore-modifiers;
         };
 
-        taphold_stickykp_siow__mo: taphold_stickykp_siow__mo {
+        taphold_stickykp_slow__mo: taphold_stickykp_slow__mo {
             compatible = "zmk,behavior-hold-tap";
-            label = "TAPHOLD_STICKYKP_SIOW__MO";
+            label = "TAPHOLD_STICKYKP_SLOW__MO";
             bindings = <&mo>, <&sticky_kp_slow>;
 
             #binding-cells = <2>;
             hold-while-undecided;
             flavor = "hold-preferred";
             tapping-term-ms = <200>;
-        };
-
-        nav_layer_with_ctrl: nav_layer_with_ctrl {
-            compatible = "zmk,behavior-tap-dance";
-            label = "NAV_LAYER_WITH_CTRL";
-            #binding-cells = <0>;
-            bindings = <&taphold_stickykp_siow__mo 8 LCTRL>, <&to 8>;
         };
 
         taphold_stickylayer_slow__kp: taphold_stickylayer_slow__kp {
@@ -161,16 +154,6 @@
             tapping-term-ms = <230>;
         };
 
-        taphold_stickykp_kp_hold_undec: taphold_stickykp_kp_hold_undec {
-            compatible = "zmk,behavior-hold-tap";
-            label = "TAPHOLD_STICKYKP_KP_HOLD_UNDEC";
-            bindings = <&kp>, <&sticky_kp_slow>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            hold-while-undecided;
-        };
-
         sticky_layer_slow_release: sticky_layer_slow_release {
             compatible = "zmk,behavior-sticky-key";
             label = "STICKY_LAYER_SLOW_RELEASE";
@@ -191,23 +174,14 @@
             tapping-term-ms = <200>;
         };
 
-        shift_tools2: shift_tools2 {
+        shift: shift {
             compatible = "zmk,behavior-hold-tap";
-            label = "SHIFT_TOOLS2";
+            label = "SHIFT";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            bindings = <&kp>, <&lshift_tools>;
+            bindings = <&kp>, <&sticky_kp_slow>;
 
             hold-while-undecided-linger;
-        };
-
-        lshift_tools: lshift_tools {
-            compatible = "zmk,behavior-tap-dance";
-            label = "LSHIFT_TOOLS";
-            #binding-cells = <0>;
-            bindings = <&sticky_kp_slow LSHIFT>, <&sticky_layer_slow_release 9>;
-
-            tapping-term-ms = <400>;
         };
 
         taphold_caps: taphold_caps {
@@ -245,26 +219,6 @@
             label = "TAPDANCE_ENTER_NUMBER_BACK";
             #binding-cells = <0>;
             bindings = <&kp ENTER>, <&to 0>;
-        };
-
-        taphold_keyrepeat_mo: taphold_keyrepeat_mo {
-            compatible = "zmk,behavior-hold-tap";
-            label = "TAPHOLD_KEYREPEAT_MO";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <200>;
-            bindings = <&mo>, <&key_repeat>;
-
-            hold-while-undecided;
-        };
-
-        tapdance_keyrepeat_mo: tapdance_keyrepeat_mo {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCE_KEYREPEAT_MO";
-            #binding-cells = <0>;
-            bindings = <&key_repeat>, <&mo 7>;
-
-            tapping-term-ms = <300>;
         };
 
         mm_keyrepeat__mo_function: mm_keyrepeat__mo_function {
@@ -364,7 +318,7 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&kp LEFT_META  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp U  &kp Y  &kp DEL  &taphold_stickylayer_slow__kp PRINTSCREEN 7  &kp TAB  &kp A  &kp R  &kp S  &kp T  &kp G  &kp M  &kp N  &kp E  &kp I  &kp O  &mm_backspace_del  &taphold_kp_kp_hold LCTRL ESCAPE  &kp Z  &kp X  &kp C  &kp D  &kp V  &kp K  &kp H  &kp COMMA  &kp DOT  &kp SLASH  &taphold_caps CAPSLOCK LGUI  &taphold_stickykp_siow__mo 8 LCTRL  &taphold_kp_mo 2 SPACE  &shift_tools2 LSHIFT 0  &mm_keyrepeat__mo_function  &taphold_mo_stickylayer 1 1  &taphold_enter_number 6 ENTER
+&kp LEFT_META  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp U  &kp Y  &kp DEL  &taphold_stickylayer_slow__kp PRINTSCREEN 7  &kp TAB  &kp A  &kp R  &kp S  &kp T  &kp G  &kp M  &kp N  &kp E  &kp I  &kp O  &mm_backspace_del  &taphold_kp_kp_hold LCTRL ESCAPE  &kp Z  &kp X  &kp C  &kp D  &kp V  &kp K  &kp H  &kp COMMA  &kp DOT  &kp SLASH  &taphold_caps CAPSLOCK LGUI  &taphold_stickykp_slow__mo 8 LCTRL  &taphold_kp_mo 2 SPACE  &shift LSHIFT LSHIFT  &mm_keyrepeat__mo_function  &taphold_mo_stickylayer 1 1  &taphold_enter_number 6 ENTER
             >;
         };
 
