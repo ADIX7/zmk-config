@@ -255,8 +255,8 @@
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <199>;
+            tapping-term-ms = <170>;
+            quick-tap-ms = <169>;
         };
     };
 
