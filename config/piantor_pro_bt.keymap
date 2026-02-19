@@ -327,7 +327,7 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&kp LEFT_META  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp U  &kp Y  &kp DEL  &taphold_stickylayer_slow__kp PRINTSCREEN 7  &kp TAB  &kp A  &kp R  &kp S  &kp T  &kp G  &kp M  &kp N  &kp E  &kp I  &kp O  &mm_backspace_del  &taphold_kp_kp_hold LCTRL ESCAPE  &kp Z  &kp X  &kp C  &kp D  &kp V  &kp K  &kp H  &kp COMMA  &kp DOT  &kp SLASH  &taphold_caps CAPSLOCK LGUI  &taphold_stickykp_slow__mo 8 LCTRL  &taphold_kp_mo 2 SPACE  &shift LSHIFT LSHIFT  &mm_keyrepeat__mo_function  &taphold_stickylayer_mo 1 1  &taphold_enter_number 6 ENTER
+&kp LEFT_META  &kp Q  &kp W  &kp F  &kp P  &kp J  &kp C_VOLUME_UP  &kp L  &kp U  &kp Y  &kp DEL  &taphold_stickylayer_slow__kp PRINTSCREEN 7  &kp TAB  &kp A  &kp R  &kp S  &kp T  &kp G  &kp M  &kp N  &kp E  &kp I  &kp O  &mm_backspace_del  &taphold_kp_kp_hold LCTRL ESCAPE  &kp Z  &kp X  &kp C  &kp D  &kp V  &kp C_VOLUME_DOWN  &kp H  &kp K  &kp APOS  &kp B  &taphold_caps CAPSLOCK LGUI  &taphold_stickykp_slow__mo 8 LCTRL  &taphold_kp_mo 2 SPACE  &shift LSHIFT LSHIFT  &mm_keyrepeat__mo_function  &taphold_stickylayer_mo 1 1  &taphold_enter_number 6 ENTER
             >;
         };
 
