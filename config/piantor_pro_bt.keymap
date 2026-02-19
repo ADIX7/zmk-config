@@ -268,11 +268,6 @@
             key-positions = <38 39>;
         };
 
-        enter {
-            bindings = <&kp ENTER>;
-            key-positions = <19 20>;
-        };
-
         lalt {
             bindings = <&sticky_kp_slow LALT>;
             key-positions = <27 28>;
