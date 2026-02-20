@@ -259,9 +259,9 @@
             quick-tap-ms = <169>;
         };
 
-        new_behavior: new_behavior {
+        mm_volume: mm_volume {
             compatible = "zmk,behavior-mod-morph";
-            label = "NEW_BEHAVIOR";
+            label = "MM_VOLUME";
             bindings = <&kp C_VOLUME_UP>, <&kp C_MUTE>;
 
             #binding-cells = <0>;
@@ -412,7 +412,7 @@
 
         nav {
             bindings = <
-&caps_word  &none  &none  &none  &none  &none  &kp C_VOLUME_UP  &kp C_PP  &kp C_PREVIOUS  &kp C_NEXT  &none  &none  &none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none  &kp PAGE_UP  &tapdance_esc_to0  &none  &none  &none  &sticky_kp_slow LA(LC(LMETA))  &none  &kp C_VOLUME_DOWN  &kp HOME  &kp END  &none  &none  &kp PAGE_DOWN  &to 0  &trans  &trans  &trans  &trans  &trans
+&caps_word  &none  &none  &none  &none  &none  &mm_volume  &kp C_PP  &kp C_PREVIOUS  &kp C_NEXT  &none  &none  &none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none  &kp PAGE_UP  &tapdance_esc_to0  &none  &none  &none  &sticky_kp_slow LA(LC(LMETA))  &none  &kp C_VOLUME_DOWN  &kp HOME  &kp END  &none  &none  &kp PAGE_DOWN  &to 0  &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "NAV";
