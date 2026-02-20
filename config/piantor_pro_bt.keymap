@@ -258,6 +258,15 @@
             tapping-term-ms = <170>;
             quick-tap-ms = <169>;
         };
+
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NEW_BEHAVIOR";
+            bindings = <&kp C_VOLUME_UP>, <&kp C_MUTE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     combos {
