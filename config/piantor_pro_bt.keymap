@@ -342,7 +342,7 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&kp LEFT_META  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp O  &kp U  &kp DEL  &taphold_stickylayer_slow__kp PRINTSCREEN 7  &kp TAB  &kp K  &kp R  &kp S  &kp T  &kp G  &kp M  &kp N  &kp E  &kp I  &kp A  &mm_backspace_del  &taphold_kp_kp_hold LCTRL ESCAPE  &kp Z  &kp Y  &kp C  &kp D  &kp V  &kp C_VOLUME_DOWN  &kp H  &taphold_kp__kp_tap COMMA SEMI  &taphold_kp__kp_tap PERIOD APOS  &kp SLASH  &taphold_caps CAPSLOCK LGUI  &taphold_stickykp_slow__mo 8 LCTRL  &taphold_kp_mo 2 SPACE  &shift LSHIFT LSHIFT  &mm_keyrepeat__mo_function  &taphold_stickylayer_mo 1 1  &taphold_enter_number 6 ENTER
+&kp LEFT_META  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp O  &kp U  &kp DEL  &taphold_stickylayer_slow__kp PRINTSCREEN 7  &kp TAB  &kp K  &kp R  &kp S  &kp T  &kp G  &kp M  &kp N  &kp E  &kp I  &kp A  &mm_backspace_del  &taphold_kp_kp_hold LCTRL ESCAPE  &kp Z  &kp Y  &kp C  &kp D  &kp V  &kp X  &kp H  &taphold_kp__kp_tap COMMA SEMI  &taphold_kp__kp_tap PERIOD APOS  &kp SLASH  &taphold_caps CAPSLOCK LGUI  &taphold_stickykp_slow__mo 8 LCTRL  &taphold_kp_mo 2 SPACE  &shift LSHIFT LSHIFT  &mm_keyrepeat__mo_function  &taphold_stickylayer_mo 1 1  &taphold_enter_number 6 ENTER
             >;
         };
 
@@ -356,7 +356,7 @@
             //                    | GUI |     | SPC | ENT |     | ALT |
 
             bindings = <
-&trans  &trans  &trans  &trans  &kp X  &trans  &trans  &trans  &kp LEFT_BRACKET  &kp BACKSLASH  &kp NON_US_BACKSLASH  &trans  &trans  &trans  &trans  &trans  &kp J  &trans  &trans  &trans  &trans  &trans  &trans  &kp RIGHT_BRACKET  &trans  &trans  &trans  &trans  &kp V  &trans  &trans  &trans  &kp N0  &kp MINUS  &kp EQUAL  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &kp X  &trans  &trans  &trans  &kp LEFT_BRACKET  &kp BACKSLASH  &kp NON_US_BACKSLASH  &trans  &trans  &trans  &trans  &trans  &kp J  &kp RIGHT_BRACKET  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp B  &kp V  &trans  &trans  &trans  &kp N0  &kp MINUS  &kp EQUAL  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
