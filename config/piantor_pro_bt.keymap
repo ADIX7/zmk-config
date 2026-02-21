@@ -356,7 +356,7 @@
             //                    | GUI |     | SPC | ENT |     | ALT |
 
             bindings = <
-&trans  &trans  &trans  &trans  &kp X  &trans  &trans  &trans  &kp LEFT_BRACKET  &kp BACKSLASH  &kp NON_US_BACKSLASH  &trans  &trans  &trans  &trans  &trans  &kp J  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp B  &kp V  &trans  &trans  &kp EQUAL  &kp N0  &kp MINUS  &kp RIGHT_BRACKET  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &kp X  &trans  &trans  &trans  &kp LEFT_BRACKET  &kp BACKSLASH  &trans  &trans  &kp NON_US_BACKSLASH  &trans  &trans  &trans  &kp J  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp B  &kp V  &trans  &trans  &kp EQUAL  &kp N0  &kp MINUS  &kp RIGHT_BRACKET  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
