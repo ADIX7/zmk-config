@@ -273,6 +273,8 @@
             label = "TAPDANCE_A";
             #binding-cells = <0>;
             bindings = <&kp APOS>, <&kp PERIOD>;
+
+            tapping-term-ms = <300>;
         };
 
         tapdance_e: tapdance_e {
@@ -280,6 +282,8 @@
             label = "TAPDANCE_E";
             #binding-cells = <0>;
             bindings = <&kp SEMI>, <&kp COMMA>;
+
+            tapping-term-ms = <300>;
         };
 
         taphold_a: taphold_a {
