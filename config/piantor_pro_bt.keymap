@@ -308,7 +308,7 @@
 
         lalt {
             bindings = <&sticky_kp_slow LALT>;
-            key-positions = <27 28>;
+            key-positions = <7 8>;
         };
 
         copy_newtab_paste {
