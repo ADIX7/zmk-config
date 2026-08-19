@@ -308,17 +308,7 @@
 
         lalt {
             bindings = <&sticky_kp_slow LALT>;
-            key-positions = <7 8>;
-        };
-
-        copy_newtab_paste {
-            bindings = <&copy_newtab_paste>;
-            key-positions = <36 16>;
-        };
-
-        copy_find_paste {
-            bindings = <&copy_find_paste>;
-            key-positions = <3 36>;
+            key-positions = <34 33>;
         };
 
         nav {
