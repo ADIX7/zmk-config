@@ -409,7 +409,7 @@
 
         dcs {
             bindings = <
-&trans  &trans  &kp Y  &kp UP_ARROW  &kp X  &kp RC(UP_ARROW)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LC(B)  &kp LEFT_ARROW  &kp DOWN  &kp RIGHT  &kp RC(DOWN_ARROW)  &trans  &trans  &trans  &trans  &trans  &trans  &tapdance_esc_to0  &trans  &kp RS(PAGE_DOWN)  &kp LA(C)  &kp RS(PG_UP)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp SPACE  &trans  &kp RA(SPACE)  &trans  &mo 6  &trans
+&trans  &trans  &kp Y  &kp UP_ARROW  &kp X  &kp RC(UP_ARROW)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LC(B)  &kp LEFT_ARROW  &kp DOWN  &kp RIGHT  &kp RC(DOWN_ARROW)  &trans  &trans  &trans  &trans  &trans  &trans  &tapdance_esc_to0  &trans  &kp RS(PAGE_DOWN)  &kp LA(C)  &kp RS(PG_UP)  &kp RC(RIGHT)  &trans  &trans  &trans  &trans  &trans  &trans  &kp SPACE  &trans  &kp RA(SPACE)  &trans  &mo 6  &trans
             >;
         };
 
