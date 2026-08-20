@@ -415,7 +415,7 @@
 
         dcs2 {
             bindings = <
-&kp S  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp RA(SEMI)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp RA(COMMA)  &kp RA(PERIOD)  &kp RA(SLASH)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp S  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp RA(SEMI)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp RA(COMMA)  &kp RA(PERIOD)  &kp RA(SLASH)  &trans  &kp LC(LS(F))  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
