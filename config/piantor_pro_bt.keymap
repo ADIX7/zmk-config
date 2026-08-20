@@ -409,13 +409,13 @@
 
         dcs {
             bindings = <
-&trans  &trans  &kp Y  &kp UP_ARROW  &kp X  &kp RC(UP_ARROW)  &trans  &trans  &kp SEMI  &trans  &trans  &trans  &trans  &kp LC(B)  &kp LEFT_ARROW  &kp DOWN  &kp RIGHT  &kp RC(DOWN_ARROW)  &trans  &kp COMMA  &kp PERIOD  &kp SLASH  &trans  &trans  &tapdance_esc_to0  &trans  &kp RS(PAGE_DOWN)  &kp LA(C)  &kp RS(PG_UP)  &kp RC(RIGHT)  &trans  &trans  &trans  &trans  &trans  &trans  &kp SPACE  &trans  &kp RA(SPACE)  &trans  &mo 6  &kp ENTER
+&trans  &trans  &kp Y  &kp UP_ARROW  &kp X  &kp RC(UP_ARROW)  &trans  &trans  &kp SEMI  &trans  &trans  &trans  &trans  &taphold_kp_kp_hold LS(B) LC(B)  &kp LEFT_ARROW  &kp DOWN  &kp RIGHT  &kp RC(DOWN_ARROW)  &trans  &kp COMMA  &kp PERIOD  &kp SLASH  &trans  &trans  &tapdance_esc_to0  &trans  &kp RS(PAGE_DOWN)  &kp LA(C)  &kp RS(PG_UP)  &kp RC(RIGHT)  &trans  &trans  &trans  &trans  &trans  &trans  &kp SPACE  &trans  &kp RA(SPACE)  &trans  &mo 6  &kp ENTER
             >;
         };
 
         dcs2 {
             bindings = <
-&kp S  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp RA(SEMI)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp RA(COMMA)  &kp RA(PERIOD)  &kp RA(SLASH)  &trans  &kp LC(LS(F))  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp S  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp RA(SEMI)  &trans  &trans  &kp LS(LC(F))  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp RA(COMMA)  &kp RA(PERIOD)  &kp RA(SLASH)  &trans  &kp G  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
