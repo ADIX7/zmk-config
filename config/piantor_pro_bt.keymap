@@ -265,6 +265,7 @@
             bindings = <&kp>;
             #binding-cells = <1>;
             release-after-ms = <2000>;
+            ignore-modifiers;
         };
 
         taphold_sl_mo: taphold_sl_mo {
