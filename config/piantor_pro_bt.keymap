@@ -413,7 +413,7 @@
         left_hand_main {
             display-name = "QWERTY";
             bindings = <
-&key_repeat  &kp Q  &kp U  &kp I  &kp O  &tog 14  &kp J  &kp L  &kp O  &kp U  &kp DEL  &to 0  &mm_backspace_del  &kp R  &taphold_kp_kp_tap SLASH T  &taphold_kp_kp_tap PERIOD N  &taphold_kp_kp_tap COMMA E  &kp K  &kp M  &kp N  &kp E  &kp I  &kp A  &kp TAB  &taphold_kp_kp_hold LCTRL ESCAPE  &kp D  &kp S  &kp H  &kp A  &none  &kp X  &kp H  &taphold_e COMMA SEMI  &taphold_a PERIOD APOS  &kp SLASH  &taphold_caps CAPSLOCK LGUI  &taphold_kp_mo 16 SPACE  &taphold_stickylayer_mo 14 12  &taphold_stickylayer_slow__kp LEFT_SHIFT 15  &mm_keyrepeat__mo_function  &taphold_stickylayer_mo 1 1  &taphold_enter_number 16 ENTER
+&none  &kp Q  &kp U  &kp I  &kp O  &tog 14  &kp J  &kp L  &kp O  &kp U  &kp DEL  &to 0  &mm_backspace_del  &kp R  &taphold_kp_kp_tap SLASH T  &taphold_kp_kp_tap PERIOD N  &taphold_kp_kp_tap COMMA E  &kp K  &kp M  &kp N  &kp E  &kp I  &kp A  &kp TAB  &taphold_kp_kp_hold LCTRL ESCAPE  &kp D  &kp S  &kp H  &kp A  &key_repeat  &kp X  &kp H  &taphold_e COMMA SEMI  &taphold_a PERIOD APOS  &kp SLASH  &taphold_caps CAPSLOCK LGUI  &taphold_kp_mo 16 SPACE  &taphold_stickylayer_mo 14 12  &taphold_stickylayer_slow__kp LEFT_SHIFT 15  &mm_keyrepeat__mo_function  &taphold_stickylayer_mo 1 1  &taphold_enter_number 16 ENTER
             >;
         };
 
@@ -425,7 +425,7 @@
 
         left_hand_mods {
             bindings = <
-&trans  &trans  &trans  &trans  &none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &taphold_stickykp_kp LEFT_WIN LEFT_WIN  &taphold_stickykp_kp LEFT_ALT LEFT_ALT  &taphold_stickykp_kp LEFT_CONTROL LEFT_CONTROL  &taphold_stickykp_kp LEFT_SHIFT LEFT_SHIFT  &taphold_caps CAPSLOCK 0  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &taphold_stickykp_kp LEFT_WIN LEFT_WIN  &taphold_stickykp_kp LEFT_ALT LEFT_ALT  &taphold_stickykp_kp LEFT_CONTROL LEFT_CONTROL  &taphold_stickykp_kp LEFT_SHIFT LEFT_SHIFT  &taphold_caps CAPSLOCK 0  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
