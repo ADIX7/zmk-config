@@ -265,8 +265,17 @@
             bindings = <&kp>;
             #binding-cells = <1>;
             release-after-ms = <2000>;
-            ignore-modifiers;
-            quick-release;
+        };
+
+        test_taphold_sl_mo: test_taphold_sl_mo {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TEST_TAPHOLD_SL_MO";
+            bindings = <&mo>, <&sl>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            hold-while-undecided;
+            tapping-term-ms = <200>;
         };
     };
 
@@ -417,7 +426,7 @@
         left_hand_main {
             display-name = "QWERTY";
             bindings = <
-&taphold_caps CAPSLOCK 0  &kp Q  &kp U  &kp I  &kp O  &tog 16  &trans  &trans  &trans  &trans  &trans  &to 0  &mm_backspace_del  &kp R  &taphold_kp_kp_tap SLASH T  &taphold_kp_kp_tap PERIOD N  &taphold_kp_kp_tap COMMA E  &kp K  &trans  &trans  &trans  &trans  &trans  &trans  &taphold_kp_kp_hold LCTRL ESCAPE  &taphold_kp_kp_tap LS(NUMBER_6) D  &taphold_kp_kp_tap RA(SLASH) S  &taphold_kp_kp_tap LS(NUMBER_3) H  &taphold_kp_kp_tap LS(N5) A  &key_repeat  &trans  &trans  &trans  &trans  &trans  &trans  &taphold_kp_mo 15 SPACE  &taphold_stickylayer_mo 13 11  &taphold_stickylayer_slow__kp LEFT_SHIFT 14  &trans  &trans  &trans
+&taphold_caps CAPSLOCK 0  &kp Q  &kp U  &kp I  &kp O  &tog 16  &trans  &trans  &trans  &trans  &trans  &to 0  &mm_backspace_del  &kp R  &taphold_kp_kp_tap SLASH T  &taphold_kp_kp_tap PERIOD N  &taphold_kp_kp_tap COMMA E  &kp K  &trans  &trans  &trans  &trans  &trans  &trans  &taphold_kp_kp_hold LCTRL ESCAPE  &taphold_kp_kp_tap LS(NUMBER_6) D  &taphold_kp_kp_tap RA(SLASH) S  &taphold_kp_kp_tap LS(NUMBER_3) H  &taphold_kp_kp_tap LS(N5) A  &key_repeat  &trans  &trans  &trans  &trans  &trans  &trans  &taphold_kp_mo 15 SPACE  &test_taphold_sl_mo 13 11  &taphold_stickylayer_slow__kp LEFT_SHIFT 14  &trans  &trans  &trans
             >;
         };
 
