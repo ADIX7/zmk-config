@@ -285,7 +285,7 @@
             bindings = <&mo>;
             #binding-cells = <1>;
             release-after-ms = <2000>;
-            ignore-modifiers;
+            quick-release;
         };
     };
 
