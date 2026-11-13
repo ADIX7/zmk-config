@@ -438,7 +438,7 @@
 
         left_hand_mods {
             bindings = <
-&kp LC(LEFT_META)  &sticky_kp_slow LS(LEFT_META)  &sticky_kp_slow LS(LEFT_ALT)  &sticky_kp_slow LC(LEFT_ALT)  &kp LS(LEFT_CONTROL)  &kp LA(LEFT_META)  &trans  &trans  &trans  &trans  &trans  &trans  &kp LA(LS(LC(LEFT_META)))  &taphold_stickykp_nonlazy_kp LEFT_WIN LEFT_WIN  &taphold_stickykp_nonlazy_kp LEFT_ALT LEFT_ALT  &taphold_stickykp_nonlazy_kp LEFT_CONTROL LEFT_CONTROL  &taphold_stickykp_nonlazy_kp LEFT_SHIFT LEFT_SHIFT  &taphold_caps CAPSLOCK 0  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LC(LS(LEFT_ALT))  &kp LC(LS(LEFT_META))  &kp LS(LA(LEFT_META))  &kp LA(LC(LEFT_META))  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&sticky_kp_slow_nonlazy LC(LEFT_META)  &sticky_kp_slow_nonlazy LS(LEFT_META)  &sticky_kp_slow_nonlazy LS(LEFT_ALT)  &sticky_kp_slow_nonlazy LC(LEFT_ALT)  &sticky_kp_slow_nonlazy LS(LEFT_CONTROL)  &sticky_kp_slow_nonlazy LA(LEFT_META)  &trans  &trans  &trans  &trans  &trans  &trans  &sticky_kp_slow_nonlazy LA(LS(LC(LEFT_META)))  &taphold_stickykp_nonlazy_kp LEFT_WIN LEFT_WIN  &taphold_stickykp_nonlazy_kp LEFT_ALT LEFT_ALT  &taphold_stickykp_nonlazy_kp LEFT_CONTROL LEFT_CONTROL  &taphold_stickykp_nonlazy_kp LEFT_SHIFT LEFT_SHIFT  &taphold_caps CAPSLOCK 0  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &sticky_kp_slow_nonlazy LC(LS(LEFT_ALT))  &sticky_kp_slow_nonlazy LC(LS(LEFT_META))  &sticky_kp_slow_nonlazy LS(LA(LEFT_META))  &sticky_kp_slow_nonlazy LA(LC(LEFT_META))  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
