@@ -277,6 +277,14 @@
             hold-while-undecided;
             tapping-term-ms = <200>;
         };
+
+        stickylayer_basic: stickylayer_basic {
+            compatible = "zmk,behavior-sticky-key";
+            label = "STICKYLAYER_BASIC";
+            bindings = <&mo>;
+            #binding-cells = <1>;
+            release-after-ms = <2000>;
+        };
     };
 
     combos {
@@ -303,7 +311,7 @@
         };
 
         left_hand_mod {
-            bindings = <&sl 12>;
+            bindings = <&stickylayer_basic 12>;
             key-positions = <13 16>;
         };
 
