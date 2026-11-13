@@ -398,7 +398,7 @@
         tools {
             display-name = "TOOLS";
             bindings = <
-&tog 3  &none  &none  &none  &none  &bt BT_CLR  &none  &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &none  &tog 5  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none  &kp C_PP  &kp C_PREVIOUS  &kp K_NEXT  &none  &none  &none  &studio_unlock &none  &none  &out OUT_TOG  &none  &none  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_COLOR_HSB(0,0,100)  &trans  &trans  &trans  &trans  &trans  &trans
+&tog 3  &none  &none  &none  &none  &bt BT_CLR  &none  &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &none  &tog 5  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none  &kp C_PP  &kp C_PREVIOUS  &kp K_NEXT  &none  &none  &none  &studio_unlock  &none  &none  &out OUT_TOG  &none  &none  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_COLOR_HSB(0,0,100)  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -419,13 +419,13 @@
 
         left_hand_2 {
             bindings = <
-&kp PRINTSCREEN  &kp X  &kp B  &kp F  &kp P  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp TAB  &kp W  &kp M  &kp L  &kp J  &kp G  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp Z  &kp Y  &kp C  &kp V  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp ENTER  &trans  &sticky_kp_slow LEFT_CONTROL  &trans  &trans  &trans
+&kp PRINTSCREEN  &kp X  &kp B  &kp F  &kp P  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp TAB  &kp W  &kp M  &kp L  &kp J  &kp G  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp Z  &kp Y  &kp C  &kp V  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp ENTER  &sticky_kp_slow LEFT_CONTROL  &kp LEFT_SHIFT  &trans  &trans  &trans
             >;
         };
 
         left_hand_mods {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &taphold_stickykp_kp LEFT_WIN LEFT_WIN  &taphold_stickykp_kp LEFT_ALT LEFT_ALT  &taphold_stickykp_kp LEFT_CONTROL LEFT_CONTROL  &taphold_stickykp_kp LEFT_SHIFT LEFT_SHIFT  &taphold_caps CAPSLOCK 0  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LC(LEFT_META)  &sticky_kp_slow LS(LEFT_META)  &sticky_kp_slow LS(LEFT_ALT)  &sticky_kp_slow LC(LEFT_ALT)  &kp LS(LEFT_CONTROL)  &kp LA(LEFT_META)  &trans  &trans  &trans  &trans  &trans  &trans  &kp LA(LS(LC(LEFT_META)))  &taphold_stickykp_kp LEFT_WIN LEFT_WIN  &taphold_stickykp_kp LEFT_ALT LEFT_ALT  &taphold_stickykp_kp LEFT_CONTROL LEFT_CONTROL  &taphold_stickykp_kp LEFT_SHIFT LEFT_SHIFT  &taphold_caps CAPSLOCK 0  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LC(LS(LEFT_ALT))  &kp LC(LS(LEFT_META))  &kp LS(LA(LEFT_META))  &kp LA(LC(LEFT_META))  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
