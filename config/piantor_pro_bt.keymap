@@ -413,13 +413,13 @@
         left_hand_main {
             display-name = "QWERTY";
             bindings = <
-&taphold_caps CAPSLOCK 0  &kp Q  &kp U  &kp I  &kp O  &tog 14  &trans  &trans  &trans  &trans  &trans  &to 0  &mm_backspace_del  &kp R  &taphold_kp_kp_tap SLASH T  &taphold_kp_kp_tap PERIOD N  &taphold_kp_kp_tap COMMA E  &kp K  &trans  &trans  &trans  &trans  &trans  &trans  &taphold_kp_kp_hold LCTRL ESCAPE  &kp D  &kp S  &kp H  &kp A  &key_repeat  &trans  &trans  &trans  &trans  &trans  &trans  &taphold_kp_mo 16 SPACE  &taphold_stickylayer_mo 14 12  &taphold_stickylayer_slow__kp LEFT_SHIFT 15  &trans  &trans  &trans
+&taphold_caps CAPSLOCK 0  &kp Q  &kp U  &kp I  &kp O  &tog 14  &trans  &trans  &trans  &trans  &trans  &to 0  &mm_backspace_del  &kp R  &taphold_kp_kp_tap SLASH T  &taphold_kp_kp_tap PERIOD N  &taphold_kp_kp_tap COMMA E  &kp K  &trans  &trans  &trans  &trans  &trans  &trans  &taphold_kp_kp_hold LCTRL ESCAPE  &taphold_kp_kp_tap LS(NUMBER_6) D  &taphold_kp_kp_tap RA(SLASH) S  &taphold_kp_kp_tap LS(NUMBER_3) H  &taphold_kp_kp_tap LS(N5) A  &key_repeat  &trans  &trans  &trans  &trans  &trans  &trans  &taphold_kp_mo 16 SPACE  &taphold_stickylayer_mo 14 12  &taphold_stickylayer_slow__kp LEFT_SHIFT 15  &trans  &trans  &trans
             >;
         };
 
         left_hand_2 {
             bindings = <
-&trans  &kp B  &kp X  &kp F  &kp P  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp TAB  &kp W  &kp M  &kp L  &kp J  &kp G  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp Z  &kp Y  &kp C  &kp V  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp ENTER  &trans  &sticky_kp_slow LEFT_CONTROL  &trans  &trans  &trans
+&kp PRINTSCREEN  &kp B  &kp X  &kp F  &kp P  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp TAB  &kp W  &kp M  &kp L  &kp J  &kp G  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp Z  &kp Y  &kp C  &kp V  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp ENTER  &trans  &sticky_kp_slow LEFT_CONTROL  &trans  &trans  &trans
             >;
         };
 
@@ -437,7 +437,7 @@
 
         left_hand_symbols {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp RA(NUMBER_0)  &kp RA(MINUS)  &kp RA(NUMBER_9)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&none  &kp RA(G)  &kp RA(Z)  &kp RA(N)  &kp LS(N9)  &kp RA(N7)  &none  &none  &none  &none  &none  &none  &kp LS(NUMBER_1)  &kp RA(F)  &kp RA(NON_US_BSLH)  &kp RA(B)  &kp LS(N8)  &kp LS(NUMBER_2)  &none  &none  &none  &none  &none  &none  &none  &kp RA(NUMBER_0)  &kp RA(MINUS)  &kp RA(NUMBER_9)  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
             >;
         };
 
