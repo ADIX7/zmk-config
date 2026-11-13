@@ -41,6 +41,7 @@
             release-after-ms = <2000>;
             lazy;
             ignore-modifiers;
+            quick-release;
         };
 
         taphold_stickykp_slow__mo: taphold_stickykp_slow__mo {
@@ -257,6 +258,16 @@
 
             flavor = "tap-preferred";
         };
+
+        sticky_kp_slow_nonlazy: sticky_kp_slow_nonlazy {
+            compatible = "zmk,behavior-sticky-key";
+            label = "STICKY_KP_SLOW_NONLAZY";
+            bindings = <&kp>;
+            #binding-cells = <1>;
+            release-after-ms = <2000>;
+            ignore-modifiers;
+            quick-release;
+        };
     };
 
     combos {
@@ -412,7 +423,7 @@
 
         left_hand_2 {
             bindings = <
-&kp PRINTSCREEN  &kp X  &kp B  &kp F  &kp P  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp TAB  &kp W  &kp M  &kp L  &kp J  &kp G  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp Z  &kp Y  &kp C  &kp V  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp ENTER  &sticky_kp_slow LEFT_CONTROL  &kp LEFT_SHIFT  &trans  &trans  &trans
+&kp PRINTSCREEN  &kp X  &kp B  &kp F  &kp P  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp TAB  &kp W  &kp M  &kp L  &kp J  &kp G  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp Z  &kp Y  &kp C  &kp V  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp ENTER  &sticky_kp_slow_nonlazy LEFT_CONTROL  &kp LEFT_SHIFT  &trans  &trans  &trans
             >;
         };
 
