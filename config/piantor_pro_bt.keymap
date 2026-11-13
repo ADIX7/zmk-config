@@ -227,9 +227,9 @@
             hold-while-undecided;
         };
 
-        taphold_kp_kp_tap: taphold_kp_kp_tap {
+        taphold_kp_kp_tap_undic: taphold_kp_kp_tap_undic {
             compatible = "zmk,behavior-hold-tap";
-            label = "TAPHOLD_KP_KP_TAP";
+            label = "TAPHOLD_KP_KP_TAP_UNDIC";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             bindings = <&kp>, <&kp>;
@@ -244,6 +244,16 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             bindings = <&kp>, <&sticky_kp_slow>;
+
+            flavor = "tap-preferred";
+        };
+
+        taphold_kp_kp_tap: taphold_kp_kp_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TAPHOLD_KP_KP_TAP";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            bindings = <&kp>, <&kp>;
 
             flavor = "tap-preferred";
         };
@@ -409,7 +419,7 @@
 
         left_hand_2 {
             bindings = <
-&trans  &kp B  &kp X  &kp F  &kp P  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp TAB  &kp W  &kp M  &kp L  &kp J  &kp G  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp Z  &kp Y  &kp C  &kp V  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &sticky_kp_slow LEFT_CONTROL  &trans  &kp ENTER  &trans  &trans  &trans
+&trans  &kp B  &kp X  &kp F  &kp P  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp TAB  &kp W  &kp M  &kp L  &kp J  &kp G  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp Z  &kp Y  &kp C  &kp V  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp ENTER  &trans  &sticky_kp_slow LEFT_CONTROL  &trans  &trans  &trans
             >;
         };
 
