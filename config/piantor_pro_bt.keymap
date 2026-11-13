@@ -94,9 +94,9 @@
             tapping-term-ms = <200>;
         };
 
-        taphold_kp_kp_slow_hold: taphold_kp_kp_slow_hold {
+        taphold_kp_kp_slow_und_ling: taphold_kp_kp_slow_und_ling {
             compatible = "zmk,behavior-hold-tap";
-            label = "TAPHOLD_KP_KP_SLOW_HOLD";
+            label = "TAPHOLD_KP_KP_SLOW_UND_LING";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             bindings = <&kp>, <&sticky_kp_slow>;
@@ -216,6 +216,16 @@
             tapping-term-ms = <170>;
             quick-tap-ms = <169>;
         };
+
+        taphold_kp_kp_slow_und: taphold_kp_kp_slow_und {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TAPHOLD_KP_KP_SLOW_UND";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            bindings = <&kp>, <&sticky_kp_slow>;
+
+            hold-while-undecided;
+        };
     };
 
     combos {
@@ -281,7 +291,7 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&kp LEFT_META  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp O  &kp U  &kp DEL  &kp PRINTSCREEN  &mm_backspace_del  &kp K  &kp R  &kp S  &kp T  &kp G  &kp M  &kp N  &kp E  &kp I  &kp A  &kp TAB  &taphold_kp_kp_hold LCTRL ESCAPE  &kp Z  &kp Y  &kp C  &kp D  &kp V  &kp X  &kp H  &taphold_e COMMA SEMI  &taphold_a PERIOD APOS  &kp SLASH  &taphold_caps CAPSLOCK LGUI  &taphold_stickykp_slow__mo 8 LCTRL  &taphold_kp_mo 2 SPACE  &taphold_kp_kp_slow_hold LSHIFT LSHIFT  &mm_keyrepeat__mo_function  &taphold_stickylayer_mo 1 1  &taphold_enter_number 15 ENTER
+&kp LEFT_META  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp O  &kp U  &kp DEL  &kp PRINTSCREEN  &mm_backspace_del  &kp K  &kp R  &kp S  &kp T  &kp G  &kp M  &kp N  &kp E  &kp I  &kp A  &kp TAB  &taphold_kp_kp_hold LCTRL ESCAPE  &kp Z  &kp Y  &kp C  &kp D  &kp V  &kp X  &kp H  &taphold_e COMMA SEMI  &taphold_a PERIOD APOS  &kp SLASH  &taphold_caps CAPSLOCK LGUI  &taphold_stickykp_slow__mo 8 LCTRL  &taphold_kp_mo 2 SPACE  &taphold_kp_kp_slow_und_ling LSHIFT LSHIFT  &mm_keyrepeat__mo_function  &taphold_stickylayer_mo 1 1  &taphold_enter_number 15 ENTER
             >;
         };
 
@@ -372,7 +382,7 @@
         left_hand_main {
             display-name = "QWERTY";
             bindings = <
-&key_repeat  &kp Q  &kp U  &kp I  &kp O  &tog 14  &kp J  &kp L  &kp O  &kp U  &kp DEL  &to 0  &mm_backspace_del  &kp R  &kp T  &kp N  &kp E  &kp K  &kp M  &kp N  &kp E  &kp I  &kp A  &kp TAB  &taphold_kp_kp_hold LCTRL ESCAPE  &kp D  &kp S  &kp H  &kp A  &none  &kp X  &kp H  &taphold_e COMMA SEMI  &taphold_a PERIOD APOS  &kp SLASH  &taphold_caps CAPSLOCK LGUI  &taphold_stickykp_slow__mo 15 SPACE  &taphold_stickylayer_mo 14 12  &taphold_kp_kp_slow_hold LSHIFT ENTER  &mm_keyrepeat__mo_function  &taphold_stickylayer_mo 1 1  &taphold_enter_number 15 ENTER
+&key_repeat  &kp Q  &kp U  &kp I  &kp O  &tog 14  &kp J  &kp L  &kp O  &kp U  &kp DEL  &to 0  &mm_backspace_del  &kp R  &kp T  &kp N  &kp E  &kp K  &kp M  &kp N  &kp E  &kp I  &kp A  &kp TAB  &taphold_kp_kp_hold LCTRL ESCAPE  &kp D  &kp S  &kp H  &kp A  &none  &kp X  &kp H  &taphold_e COMMA SEMI  &taphold_a PERIOD APOS  &kp SLASH  &taphold_caps CAPSLOCK LGUI  &taphold_stickykp_slow__mo 15 SPACE  &taphold_stickylayer_mo 14 12  &taphold_kp_kp_slow_und LSHIFT ENTER  &mm_keyrepeat__mo_function  &taphold_stickylayer_mo 1 1  &taphold_enter_number 15 ENTER
             >;
         };
 
@@ -390,7 +400,7 @@
 
         left_hand_nav {
             bindings = <
-&none  &sticky_kp_slow LEFT_WIN  &sticky_kp_slow LEFT_ALT  &sticky_kp_slow LEFT_CONTROL  &sticky_kp_slow LEFT_SHIFT  &tog 14  &mm_volume  &kp C_PP  &kp C_PREVIOUS  &kp C_NEXT  &none  &none  &none  &kp LEFT_ARROW  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &taphold_kp_kp_hold LEFT_CONTROL LEFT_CONTROL  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp PG_UP  &none  &none  &kp PAGE_DOWN  &kp PAGE_UP  &kp HOME  &kp END  &none  &kp C_VOLUME_DOWN  &kp HOME  &kp END  &kp PERIOD  &kp PAGE_DOWN  &none  &taphold_kp_kp_slow_hold LEFT_WIN LEFT_WIN  &taphold_kp_kp_slow_hold LEFT_ALT LEFT_ALT  &taphold_kp_kp_slow_hold LEFT_SHIFT LEFT_SHIFT  &trans  &trans  &trans
+&none  &sticky_kp_slow LEFT_WIN  &sticky_kp_slow LEFT_ALT  &sticky_kp_slow LEFT_CONTROL  &sticky_kp_slow LEFT_SHIFT  &tog 14  &mm_volume  &kp C_PP  &kp C_PREVIOUS  &kp C_NEXT  &none  &none  &none  &kp LEFT_ARROW  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &taphold_kp_kp_hold LEFT_CONTROL LEFT_CONTROL  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp PG_UP  &none  &none  &kp PAGE_DOWN  &kp PAGE_UP  &kp HOME  &kp END  &none  &kp C_VOLUME_DOWN  &kp HOME  &kp END  &kp PERIOD  &kp PAGE_DOWN  &none  &taphold_kp_kp_slow_und_ling LEFT_WIN LEFT_WIN  &taphold_kp_kp_slow_und_ling LEFT_ALT LEFT_ALT  &taphold_kp_kp_slow_und_ling LEFT_SHIFT LEFT_SHIFT  &trans  &trans  &trans
             >;
         };
 
