@@ -226,6 +226,17 @@
 
             hold-while-undecided;
         };
+
+        taphold_kp_kp_tap: taphold_kp_kp_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TAPHOLD_KP_KP_TAP";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            bindings = <&kp>, <&kp>;
+
+            hold-while-undecided;
+            flavor = "tap-preferred";
+        };
     };
 
     combos {
@@ -252,7 +263,7 @@
         };
 
         left_hand_mod {
-            bindings = <&mo 13>;
+            bindings = <&sticky_layer_slow_release 13>;
             key-positions = <13 16>;
         };
 
@@ -382,7 +393,7 @@
         left_hand_main {
             display-name = "QWERTY";
             bindings = <
-&key_repeat  &kp Q  &kp U  &kp I  &kp O  &tog 14  &kp J  &kp L  &kp O  &kp U  &kp DEL  &to 0  &mm_backspace_del  &kp R  &kp T  &kp N  &kp E  &kp K  &kp M  &kp N  &kp E  &kp I  &kp A  &kp TAB  &taphold_kp_kp_hold LCTRL ESCAPE  &kp D  &kp S  &kp H  &kp A  &none  &kp X  &kp H  &taphold_e COMMA SEMI  &taphold_a PERIOD APOS  &kp SLASH  &taphold_caps CAPSLOCK LGUI  &taphold_stickykp_slow__mo 15 SPACE  &taphold_stickylayer_mo 14 12  &taphold_kp_kp_slow_und LSHIFT ENTER  &mm_keyrepeat__mo_function  &taphold_stickylayer_mo 1 1  &taphold_enter_number 15 ENTER
+&key_repeat  &kp Q  &kp U  &kp I  &kp O  &tog 14  &kp J  &kp L  &kp O  &kp U  &kp DEL  &to 0  &mm_backspace_del  &kp R  &kp T  &kp N  &kp E  &kp K  &kp M  &kp N  &kp E  &kp I  &kp A  &kp TAB  &taphold_kp_kp_hold LCTRL ESCAPE  &kp D  &kp S  &kp H  &kp A  &none  &kp X  &kp H  &taphold_e COMMA SEMI  &taphold_a PERIOD APOS  &kp SLASH  &taphold_caps CAPSLOCK LGUI  &taphold_kp_mo 15 SPACE  &taphold_stickylayer_mo 14 12  &taphold_kp_kp_tap LSHIFT ENTER  &mm_keyrepeat__mo_function  &taphold_stickylayer_mo 1 1  &taphold_enter_number 15 ENTER
             >;
         };
 
