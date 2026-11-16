@@ -313,7 +313,7 @@
             label = "TAPDANCE_LEFT_RIGHT";
             #binding-cells = <0>;
             bindings =
-                <&taphold_stickykp_slow__mo 14 LEFT_SHIFT>,
+                <&th_stickykp_slow_nonlazy__mo 14 LEFT_SHIFT>,
                 <&sticky_kp_slow LEFT_ALT>;
         };
 
@@ -340,8 +340,19 @@
             hold-while-undecided;
             hold-trigger-on-release;
             flavor = "balanced";
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&mm_left_nav_num>, <&kp>;
+        };
+
+        th_stickykp_slow_nonlazy__mo: th_stickykp_slow_nonlazy__mo {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TH_STICKYKP_SLOW_NONLAZY__MO";
+            bindings = <&mo>, <&sticky_kp_slow_nonlazy>;
+
+            #binding-cells = <2>;
+            hold-while-undecided;
+            flavor = "hold-preferred";
+            tapping-term-ms = <250>;
         };
     };
 
