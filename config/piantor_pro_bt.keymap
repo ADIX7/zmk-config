@@ -304,8 +304,10 @@
             label = "TAPDANCE_LEFT_CENTER";
             #binding-cells = <0>;
             bindings =
-                <&taphold_kp_mo 11 SPACE>,
+                <&taphold_kp_mo_hold 11 SPACE>,
                 <&sticky_kp_slow LEFT_CONTROL>;
+
+            tapping-term-ms = <250>;
         };
 
         tapdance_left_right: tapdance_left_right {
@@ -315,6 +317,8 @@
             bindings =
                 <&th_stickykp_slow_nonlazy__mo 14 LEFT_SHIFT>,
                 <&sticky_kp_slow LEFT_ALT>;
+
+            tapping-term-ms = <250>;
         };
 
         tapdance_left_left: tapdance_left_left {
@@ -322,6 +326,8 @@
             label = "TAPDANCE_LEFT_LEFT";
             #binding-cells = <0>;
             bindings = <&th_kp_mmleftnavnum 0 ENTER>, <&tog 13>;
+
+            tapping-term-ms = <250>;
         };
 
         mm_left_nav_num: mm_left_nav_num {
@@ -348,6 +354,17 @@
             compatible = "zmk,behavior-hold-tap";
             label = "TH_STICKYKP_SLOW_NONLAZY__MO";
             bindings = <&mo>, <&sticky_kp_slow_nonlazy>;
+
+            #binding-cells = <2>;
+            hold-while-undecided;
+            flavor = "hold-preferred";
+            tapping-term-ms = <250>;
+        };
+
+        taphold_kp_mo_hold: taphold_kp_mo_hold {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TAPHOLD_KP_MO_HOLD";
+            bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
             hold-while-undecided;
