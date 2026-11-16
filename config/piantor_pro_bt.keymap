@@ -390,7 +390,7 @@
         };
 
         lmeta2 {
-            bindings = <&kp LEFT_META>;
+            bindings = <&taphold_lmeta LEFT_META LEFT_META>;
             key-positions = <25 28>;
         };
     };
