@@ -381,7 +381,7 @@
 
         left_hand_mod {
             bindings = <&stickylayer_basic 12>;
-            key-positions = <13 16>;
+            key-positions = <13 15>;
         };
 
         left_hand {
@@ -392,6 +392,11 @@
         lmeta2 {
             bindings = <&taphold_lmeta LEFT_META LEFT_META>;
             key-positions = <25 28>;
+        };
+
+        repeat_key {
+            bindings = <&key_repeat>;
+            key-positions = <13 16>;
         };
     };
 
